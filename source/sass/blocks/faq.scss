@@ -1,0 +1,13 @@
+.faq__accordion {
+    @include ul();
+}
+
+.faq__item h3 {
+    @include fields();
+    @include font(1.8rem, 130%, 500);
+}
+
+.faq__item p {
+    @include fields();
+    @include font(1.6rem, 130%, 400);
+}

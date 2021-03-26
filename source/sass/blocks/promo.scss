@@ -1,0 +1,28 @@
+.promo {
+    background-image: url("../../img/promo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 463px;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    font-family: $cormorant;
+}
+
+.promo__container {
+    padding: 60px 30px;
+    flex-grow: 1;
+    gap: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.promo__container p {
+    @include font(3.8rem, 130%, 400);
+    @include fields();
+    color: $white;
+    font-family: $cormorant;
+    font-style: italic;
+}

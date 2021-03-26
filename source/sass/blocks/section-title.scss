@@ -1,0 +1,12 @@
+.section-title {
+    @include font(3.4rem, 130%, 700);
+    @include fields();
+    font-family: $cormorant;
+    text-align: center;
+
+    &--promo {
+        @include font(4.5rem, 130%, 700);
+        text-transform: uppercase;
+        color: $white;
+    }
+}

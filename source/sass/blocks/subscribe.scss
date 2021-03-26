@@ -1,0 +1,28 @@
+.subscribe h3 {
+    @include fields();
+    @include font(3.4rem, 130%, 700);
+    font-family: $cormorant;
+}
+
+.subscribe p {
+    @include fields();
+    color: $grey;
+}
+
+.subscribe__form {
+    position: relative;
+    border-bottom: 1px solid $white;
+}
+
+.subscribe__form input {
+    @include font(1.4rem, 130%, 500);
+    background-color: transparent;
+    border: none;
+}
+.subscribe label {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    transition: all 0.3 ease;
+    color: $grey;
+}

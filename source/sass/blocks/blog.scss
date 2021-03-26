@@ -1,0 +1,23 @@
+.blog {
+}
+
+.blog__list {
+    @include ul();
+}
+
+.blog__item {
+}
+
+.blog__article {
+}
+
+.blog__date {
+    @include font(1.4rem, 130%, 500);
+    color: $grey;
+}
+
+.blog__article h3 {
+    @include fields();
+    @include font(2.6rem, 130%, 600);
+    font-family: $cormorant;
+}

@@ -1,0 +1,7 @@
+.social {
+    @include ul();
+}
+
+.social__link {
+    @include a();
+}

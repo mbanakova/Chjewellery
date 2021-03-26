@@ -1,0 +1,17 @@
+.card {
+    text-align: center;
+}
+
+.card__link {
+    @include a();
+}
+
+.card h3 {
+    @include fields();
+    @include font(1.6rem, 130%, 500);
+}
+
+.card p {
+    @include fields();
+    @include font(1.4rem, 130%, 700);
+}

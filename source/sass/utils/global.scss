@@ -1,0 +1,44 @@
+html {
+    @include font();
+}
+
+body {
+    @include font(1.6rem, 130%, 400);
+    @include fields();
+    position: relative;
+    min-width: $mobile;
+    min-height: 100vh;
+    margin: 0 auto;
+    font-family: $poppins;
+    background-color: $white;
+    color: $dark;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+
+    @media (min-width: $desktop) {
+        // шаблон медиа-запроса desktop-first
+    }
+
+    @media (min-resolution: $extra) {
+        // шаблон для фонового изображения на экранах с повышенной плотностью пикселей
+    }
+}
+
+body,
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    outline-color: $accent;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+main {
+    flex-grow: 1;
+}

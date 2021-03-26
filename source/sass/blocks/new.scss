@@ -1,0 +1,38 @@
+.new__slider {
+    overflow: hidden;
+    position: relative;
+    min-height: 346px;
+    width: auto;
+}
+
+.new__inner {
+    @include ul();
+    position: absolute;
+    display: flex;
+    gap: 30px;
+    top: 0;
+    left: 0;
+    min-height: 346px;
+    min-width: max-content;
+}
+
+.new__bullets {
+    @include ul();
+    counter-reset: myCounter;
+    display: flex;
+}
+
+.new__numbers {
+    position: relative;
+
+    &::before {
+        @include font(1.6rem, 30px, 500);
+        position: absolute;
+        counter-increment: myCounter;
+        content: counter(myCounter);
+        top: 0;
+        left: 0;
+        width: 10px;
+        height: 12px;
+    }
+}
