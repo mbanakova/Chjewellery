@@ -2,12 +2,48 @@
     @include ul();
 }
 
-.faq__item h3 {
+.faq__item {
+    padding: 50px 50px 50px 43px;
+    border: 1px solid $accent;
+
+    &:not(:last-of-type) {
+        border-bottom: none;
+    }
+}
+
+.faq__title {
     @include fields();
     @include font(1.8rem, 130%, 500);
+    padding-right: 100px;
+    position: relative;
+    cursor: pointer;
+
+    &::after {
+        position: absolute;
+        content: "";
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%) rotate(-45deg);
+        width: 20px;
+        height: 20px;
+        border-bottom: 2px solid $accent;
+        border-left: 2px solid $accent;
+        transition: 0.1s ease;
+    }
+
+    &--active::after {
+        border: none;
+        border-top: 2px solid $accent;
+        border-right: 2px solid $accent;
+    }
 }
 
 .faq__item p {
     @include fields();
     @include font(1.6rem, 130%, 400);
+    margin-top: 20px;
+    padding-right: 100px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.1s ease max-height;
 }

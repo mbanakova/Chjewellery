@@ -11,6 +11,13 @@
 
     &--close {
         @media (max-width: $desktop) {
+            &.header {
+                background-color: unset;
+                color: inherit;
+                height: 126px;
+                min-height: unset;
+            }
+
             & .header__burger::before {
                 background-color: $black;
                 box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
@@ -23,13 +30,22 @@
             & .header__bottom {
                 display: none;
             }
+
+            .header__logo svg {
+                fill: $accent;
+            }
         }
     }
 
     @media (max-width: $desktop) {
         background-color: $accent;
         color: $white;
+        min-height: 100vh;
     }
+}
+
+.header__container {
+    position: relative;
 }
 
 .header__top {
@@ -58,6 +74,11 @@
 
 .header__bottom {
     padding-top: 20px;
+
+    @media (max-width: $desktop) {
+        position: absolute;
+        top: 160px;
+    }
 }
 
 .header__burger {
@@ -91,6 +112,8 @@
     @media (max-width: $desktop) {
         order: 1;
         width: 100%;
+        top: 100px;
+        position: absolute;
     }
 }
 
@@ -137,8 +160,9 @@
     }
 }
 
-.header__logo {
+.header__logo svg {
     @media (max-width: $desktop) {
+        fill: currentColor;
     }
 }
 

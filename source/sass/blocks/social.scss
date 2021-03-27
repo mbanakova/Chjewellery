@@ -4,4 +4,8 @@
 
 .social__link {
     @include a();
+
+    & svg {
+        margin-right: 8px;
+    }
 }

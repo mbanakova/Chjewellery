@@ -9,12 +9,40 @@
 .footer__container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer__nav-links {
     @include ul();
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .footer__nav-link {
     @include a();
+}
+
+.footer__social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: $desktop) {
+    .footer__subscribe {
+        flex-grow: 1;
+        flex-basis: 100%;
+    }
+}
+@media (max-width: $tablet) {
+    .footer__container {
+        flex-direction: column;
+    }
+
+    .footer__social {
+        display: flex;
+        font-size: 0;
+        gap: 20px;
+    }
 }

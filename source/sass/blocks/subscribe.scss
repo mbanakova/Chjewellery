@@ -1,28 +1,60 @@
 .subscribe h3 {
     @include fields();
     @include font(3.4rem, 130%, 700);
+    margin-bottom: 25px;
     font-family: $cormorant;
 }
 
 .subscribe p {
     @include fields();
     color: $grey;
+    margin-bottom: 38px;
 }
 
 .subscribe__form {
     position: relative;
     border-bottom: 1px solid $white;
+    display: flex;
+    justify-content: space-between;
 }
 
 .subscribe__form input {
     @include font(1.4rem, 130%, 500);
     background-color: transparent;
     border: none;
+    padding: 10px 30px 10px 0;
+    flex-grow: 1;
+    color: inherit;
+    font-family: $poppins;
+
+    &:focus + label,
+    &:valid + label {
+        transform: translateY(-200%);
+    }
 }
+
+.subscribe__form button {
+    @include font(1.6rem, 130%, 500);
+    font-family: $poppins;
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    padding: 10px 0 10px 10px;
+    cursor: pointer;
+
+    & svg {
+        margin-left: 12px;
+    }
+}
+
 .subscribe label {
     position: absolute;
-    bottom: 10px;
+    top: 50%;
     left: 0;
+    transform: translateY(-50%);
     transition: all 0.3 ease;
     color: $grey;
+}
+
+@media (max-width: $desktop) {
 }

@@ -5,12 +5,12 @@
     box-sizing: content-box;
 
     @media (max-width: $desktop) {
-        max-width: 678px;
+        min-width: 678px;
         padding: 0 45px;
     }
 
     @media (max-width: $tablet) {
-        max-width: 290px;
+        min-width: 290px;
         padding: 0 15px;
     }
 }

@@ -53,7 +53,7 @@
     </head>
     <body class="body">
         <header class="header header--close header--nojs">
-            <div class="container">
+            <div class="header__container container">
                 <div class="header__top">
                     <button class="header__burger"></button>
                     <form action="GET" class="header__form">
@@ -288,7 +288,9 @@
                     <h2 class="section-title">Frequently asked questions</h2>
                     <ul class="faq__accordion">
                         <li class="faq__item">
-                            <h3>What materials are the jewellery made of?</h3>
+                            <h3 class="faq__title">
+                                What materials are the jewellery made of?
+                            </h3>
                             <p>
                                 Our jewellerry is made of solid gold, silver or
                                 leather. Also, some jewellery contains precious
@@ -296,7 +298,9 @@
                             </p>
                         </li>
                         <li class="faq__item">
-                            <h3>Which countries do you deliver to?</h3>
+                            <h3 class="faq__title">
+                                Which countries do you deliver to?
+                            </h3>
                             <p>
                                 Our jewellerry is made of solid gold, silver or
                                 leather. Also, some jewellery contains precious
@@ -304,7 +308,9 @@
                             </p>
                         </li>
                         <li class="faq__item">
-                            <h3>What are the payment methods?</h3>
+                            <h3 class="faq__title">
+                                What are the payment methods?
+                            </h3>
                             <p>
                                 Our jewellerry is made of solid gold, silver or
                                 leather. Also, some jewellery contains precious
@@ -312,7 +318,7 @@
                             </p>
                         </li>
                         <li class="faq__item">
-                            <h3>
+                            <h3 class="faq__title">
                                 Can I return the jewellery if it didn’t fit me?
                             </h3>
                             <p>
@@ -337,7 +343,7 @@
                     <h3>The good stuff in your inbox</h3>
                     <p>News and updates from CH. No spam, we promise.</p>
                     <form class="subscribe__form" action="POST">
-                        <input type="text" id="footer-submit" />
+                        <input type="email" id="footer-submit" required />
                         <label for="footer-submit">
                             <span class="subscribe__label">Your E-mail</span>
                         </label>
@@ -393,7 +399,7 @@
                     <li class="social__item">
                         <a class="social__link" href="#">
                             <svg
-                                width="8"
+                                width="15"
                                 height="15"
                                 role="img"
                                 aria-label="facebook"
