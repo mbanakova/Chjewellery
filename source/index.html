@@ -237,47 +237,155 @@
                 </div>
             </section>
             <section class="blog">
-                <div class="container">
+                <div class="blog__container container">
                     <h2 class="section-title">Blog</h2>
                     <a class="page-link" href="#">Read all</a>
                     <ul class="blog__list">
-                        <li class="blog__item card">
-                            <img
-                                src="https://via.placeholder.com/285x300"
-                                alt=""
-                            />
+                        <li class="blog__item">
+                            <picture>
+                                <!-- 1х: 290px; 2x: 580px -->
+                                <source
+                                    type="image/webp"
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                        img/blog1-mobile.webp   1x,
+                                        img/blog1-mobile@2.webp 2x
+                                    "
+                                />
+                                <!-- 1х: 339px; 2x: 678px -->
+                                <source
+                                    type="image/webp"
+                                    media="(max-width: 1023px)"
+                                    srcset="
+                                        img/blog1-tablet.webp   1x,
+                                        img/blog1-tablet@2.webp 2x
+                                    "
+                                />
+                                <!-- 1х: 285px; 2x: 570px -->
+                                <source
+                                    type="image/webp"
+                                    srcset="
+                                        img/blog1-desktop.webp   1x,
+                                        img/blog1-desktop@2.webp 2x
+                                    "
+                                />
+                                <!-- 1х: 285px; 2x: 570px -->
+                                <img
+                                    src="img/blog1-desktop.png"
+                                    srcset="
+                                        img/blog1-desktop.png   285w,
+                                        img/blog1-desktop@2.png 570w
+                                    "
+                                    sizes="(max-width: 767px) 290px, (max-width: 1023px) 339px, 285px"
+                                    alt="Фото 1"
+                                />
+                            </picture>
                             <article class="blog__article">
                                 <time class="blog__date"
                                     >September 30, 2019</time
                                 >
                                 <h3>How to care for your jewellery</h3>
-                                <a class="page-link" href="#">Read Article</a>
-                            </article>
-                        </li>
-                        <li class="blog__item">
-                            <img
-                                src="https://via.placeholder.com/285x300"
-                                alt=""
-                            />
-                            <article class="blog__article">
-                                <time class="blog__date"
-                                    >September 23, 2019</time
+                                <a class="blog__link page-link" href="#"
+                                    >Read Article</a
                                 >
-                                <h3>Power of crystals</h3>
-                                <a class="page-link" href="#">Read Article</a>
                             </article>
                         </li>
                         <li class="blog__item blog__item--large">
-                            <img
-                                src="https://via.placeholder.com/570x630"
-                                alt=""
-                            />
+                            <picture>
+                                <!-- 1х: 290px; 2x: 580px -->
+                                <source
+                                    type="image/webp"
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                        img/blog3-mobile.webp   1x,
+                                        img/blog3-mobile@2.webp 2x
+                                    "
+                                />
+                                <!-- 1х: 339px; 2x: 678px -->
+                                <source
+                                    type="image/webp"
+                                    media="(max-width: 1023px)"
+                                    srcset="
+                                        img/blog3-tablet.webp   1x,
+                                        img/blog3-tablet@2.webp 2x
+                                    "
+                                />
+                                <!-- 1х: 285px; 2x: 570px -->
+                                <source
+                                    type="image/webp"
+                                    srcset="
+                                        img/blog3-desktop.webp   1x,
+                                        img/blog3-desktop@2.webp 2x
+                                    "
+                                />
+                                <!-- 1х: 285px; 2x: 570px -->
+                                <img
+                                    src="img/blog3-desktop.png"
+                                    srcset="
+                                        img/blog3-desktop.png   285w,
+                                        img/blog3-desktop@2.png 570w
+                                    "
+                                    sizes="(max-width: 767px) 290px, (max-width: 1023px) 339px, 285px"
+                                    alt="Фото 3"
+                                />
+                            </picture>
                             <article class="blog__article">
                                 <time class="blog__date"
                                     >September 16, 2019</time
                                 >
                                 <h3>AW 19 trends</h3>
-                                <a class="page-link" href="#">Read Article</a>
+                                <a class="blog__link page-link" href="#"
+                                    >Read Article</a
+                                >
+                            </article>
+                        </li>
+                        <li class="blog__item">
+                            <picture>
+                                <!-- 1х: 290px; 2x: 580px -->
+                                <source
+                                    type="image/webp"
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                        img/blog2-mobile.webp   1x,
+                                        img/blog2-mobile@2.webp 2x
+                                    "
+                                />
+                                <!-- 1х: 339px; 2x: 678px -->
+                                <source
+                                    type="image/webp"
+                                    media="(max-width: 1023px)"
+                                    srcset="
+                                        img/blog2-tablet.webp   1x,
+                                        img/blog2-tablet@2.webp 2x
+                                    "
+                                />
+                                <!-- 1х: 285px; 2x: 570px -->
+                                <source
+                                    type="image/webp"
+                                    srcset="
+                                        img/blog2-desktop.webp   1x,
+                                        img/blog2-desktop@2.webp 2x
+                                    "
+                                />
+                                <!-- 1х: 285px; 2x: 570px -->
+                                <img
+                                    src="img/blog1-desktop.png"
+                                    srcset="
+                                        img/blog2-desktop.png   285w,
+                                        img/blog2-desktop@2.png 570w
+                                    "
+                                    sizes="(max-width: 767px) 290px, (max-width: 1023px) 339px, 285px"
+                                    alt="Фото 2"
+                                />
+                            </picture>
+                            <article class="blog__article">
+                                <time class="blog__date"
+                                    >September 23, 2019</time
+                                >
+                                <h3>Power of crystals</h3>
+                                <a class="blog__link page-link" href="#"
+                                    >Read Article</a
+                                >
                             </article>
                         </li>
                     </ul>
@@ -288,9 +396,7 @@
                     <h2 class="section-title">Frequently asked questions</h2>
                     <ul class="faq__accordion">
                         <li class="faq__item">
-                            <h3 class="faq__title">
-                                What materials are the jewellery made of?
-                            </h3>
+                            <h3>What materials are the jewellery made of?</h3>
                             <p>
                                 Our jewellerry is made of solid gold, silver or
                                 leather. Also, some jewellery contains precious
@@ -298,9 +404,7 @@
                             </p>
                         </li>
                         <li class="faq__item">
-                            <h3 class="faq__title">
-                                Which countries do you deliver to?
-                            </h3>
+                            <h3>Which countries do you deliver to?</h3>
                             <p>
                                 Our jewellerry is made of solid gold, silver or
                                 leather. Also, some jewellery contains precious
@@ -308,9 +412,7 @@
                             </p>
                         </li>
                         <li class="faq__item">
-                            <h3 class="faq__title">
-                                What are the payment methods?
-                            </h3>
+                            <h3>What are the payment methods?</h3>
                             <p>
                                 Our jewellerry is made of solid gold, silver or
                                 leather. Also, some jewellery contains precious
@@ -318,7 +420,7 @@
                             </p>
                         </li>
                         <li class="faq__item">
-                            <h3 class="faq__title">
+                            <h3>
                                 Can I return the jewellery if it didn’t fit me?
                             </h3>
                             <p>

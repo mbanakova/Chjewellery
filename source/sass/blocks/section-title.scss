@@ -1,6 +1,7 @@
 .section-title {
     @include font(3.4rem, 130%, 700);
     @include fields();
+    margin-bottom: 35px;
     font-family: $cormorant;
     text-align: center;
 

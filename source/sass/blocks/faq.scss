@@ -11,7 +11,7 @@
     }
 }
 
-.faq__title {
+.faq__item h3 {
     @include fields();
     @include font(1.8rem, 130%, 500);
     padding-right: 100px;
@@ -31,7 +31,7 @@
         transition: 0.1s ease;
     }
 
-    &--active::after {
+    &.active::after {
         border: none;
         border-top: 2px solid $accent;
         border-right: 2px solid $accent;

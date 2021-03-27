@@ -10,11 +10,11 @@ let items = document.querySelectorAll(".faq__item");
 
 items.forEach((item) => {
     item.addEventListener("click", () => {
-        const title = item.querySelector(".faq__title");
+        const title = item.querySelector("h3");
         console.log(title);
         const height = title.nextElementSibling.scrollHeight;
-        title.classList.toggle("faq__title--active");
-        if (title.classList.contains("faq__title--active")) {
+        title.classList.toggle("active");
+        if (title.classList.contains("active")) {
             title.nextElementSibling.style.maxHeight = `${height}px`;
         } else {
             title.nextElementSibling.style.maxHeight = 0;
