@@ -2,15 +2,26 @@
     padding-top: 30px;
     padding-bottom: 25px;
 
-    &--nojs {
+    &--js {
         @media (max-width: $desktop) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 100;
             background-color: $accent;
             color: $white;
+
+            & .header__burger {
+                display: block;
+            }
         }
     }
 
     &--close {
         @media (max-width: $desktop) {
+            position: static;
             &.header {
                 background-color: unset;
                 color: inherit;
@@ -40,7 +51,7 @@
     @media (max-width: $desktop) {
         background-color: $accent;
         color: $white;
-        min-height: 100vh;
+        height: 100vh;
     }
 }
 
@@ -85,7 +96,6 @@
     display: none;
 
     @media (max-width: $desktop) {
-        display: block;
         position: relative;
         border: none;
         padding: 0;

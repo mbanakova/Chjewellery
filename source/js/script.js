@@ -1,4 +1,5 @@
-document.querySelector(".header").classList.remove("header--nojs");
+document.querySelector(".header").classList.add("header--js");
+document.querySelector(".header").classList.add("header--close");
 let burger = document.querySelector(".header__burger");
 let header = document.querySelector("header");
 
