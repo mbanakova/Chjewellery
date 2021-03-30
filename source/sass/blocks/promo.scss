@@ -26,3 +26,12 @@
     font-family: $cormorant;
     font-style: italic;
 }
+
+@media (max-width: $tablet) {
+    .promo__container {
+        padding: 0;
+    }
+    .promo__container p {
+        @include font(3.4rem, 130%, 400);
+    }
+}

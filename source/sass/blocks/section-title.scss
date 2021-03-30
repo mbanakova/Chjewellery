@@ -11,3 +11,10 @@
         color: $white;
     }
 }
+@media (max-width: $tablet) {
+    &--promo {
+        @include font(3.8rem, 130%, 700);
+        text-transform: uppercase;
+        color: $white;
+    }
+}
