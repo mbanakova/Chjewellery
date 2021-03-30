@@ -47,3 +47,14 @@
     overflow: hidden;
     transition: 0.1s ease max-height;
 }
+
+@media (max-width: $tablet) {
+    .faq__item {
+        padding: 25px;
+    }
+
+    .faq__item p,
+    .faq__item h3 {
+        padding-right: 61px;
+    }
+}

@@ -41,8 +41,13 @@
     }
 
     .footer__social {
-        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
         font-size: 0;
         gap: 20px;
+    }
+
+    .footer__nav-links:not(:last-of-type) {
+        margin-bottom: 20px;
     }
 }

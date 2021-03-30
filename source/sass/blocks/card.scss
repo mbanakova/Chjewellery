@@ -4,6 +4,13 @@
 
 .card__link {
     @include a();
+
+    & img {
+        min-width: 100%;
+        min-height: 100%;
+        margin-bottom: 0;
+        object-fit: cover;
+    }
 }
 
 .card h3 {
@@ -14,4 +21,24 @@
 .card p {
     @include fields();
     @include font(1.4rem, 130%, 700);
+}
+
+.card__img-wrap {
+    width: 100%;
+    height: 284px;
+    margin: 0;
+}
+
+@media (max-width: $desktop) {
+    .card__img-wrap {
+        width: 100%;
+        height: 340px;
+    }
+}
+
+@media (max-width: $tablet) {
+    .card__img-wrap {
+        width: 100%;
+        height: 136px;
+    }
 }

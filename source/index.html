@@ -48,6 +48,10 @@
             crossorigin
         />
         <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> Добавить фавиконку -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
         <link rel="stylesheet" href="css/style.min.css" />
         <title>Chjewellery</title>
     </head>
@@ -161,7 +165,7 @@
                     <a class="page-link" href="#">Shop now</a>
 
                     <button
-                        class="new__button new__button--next"
+                        class="new__button new__button--next swiper-button-next"
                         type="button"
                         aria-label="Назад"
                     >
@@ -170,7 +174,7 @@
                         </svg>
                     </button>
                     <button
-                        class="new__button new__button--prev"
+                        class="new__button new__button--prev swiper-button-prev"
                         type="button"
                         aria-label="Назад"
                     >
@@ -178,196 +182,350 @@
                             <use xlink:href="img/sprite.svg#icon-arrow"></use>
                         </svg>
                     </button>
-                    <div class="new__slider">
-                        <ul class="new__inner">
-                            <li class="new__card card">
+                    <div class="new__slider swiper-container">
+                        <ul class="new__inner swiper-wrapper">
+                            <li class="new__card card swiper-slide">
                                 <a class="card__link" href="#">
-                                    <picture>
-                                        <!-- 1х: 130px; 2x: 260px -->
-                                        <source
-                                            type="image/webp"
-                                            media="(max-width: 767px)"
-                                            srcset="
-                                                img/new1-mobile.webp   1x,
-                                                img/new1-mobile@2.webp 2x
-                                            "
-                                        />
-                                        <!-- 1х: 324px; 2x: 648px -->
-                                        <source
-                                            type="image/webp"
-                                            media="(max-width: 1023px)"
-                                            srcset="
-                                                img/new1-tablet.webp   1x,
-                                                img/new1-tablet@2.webp 2x
-                                            "
-                                        />
-                                        <!-- 1х: 270px; 2x: 540px -->
-                                        <source
-                                            type="image/webp"
-                                            srcset="
-                                                img/new1-desktop.webp   1x,
-                                                img/new1-desktop@2.webp 2x
-                                            "
-                                        />
-                                        <!-- 1х: 270px; 2x: 540px -->
-                                        <img
-                                            src="img/blog3-desktop.png"
-                                            srcset="
-                                                img/new1-desktop.png   270w,
-                                                img/new1-desktop@2.png 540w
-                                            "
-                                            sizes="(max-width: 767px) 130px, (max-width: 1023px) 324px, 270px"
-                                            alt="Фото 1"
-                                        />
-                                    </picture>
+                                    <div class="card__img-wrap">
+                                        <picture>
+                                            <!-- 1х: 270px; 2x: 540px -->
+                                            <source
+                                                type="image/webp"
+                                                srcset="
+                                                    img/new1-desktop.webp   1x,
+                                                    img/new1-desktop@2.webp 2x
+                                                "
+                                            />
+                                            <!-- 1х: 270px; 2x: 540px -->
+                                            <img
+                                                src="img/new1-desktop.png"
+                                                srcset="
+                                                    img/new1-desktop.png   270w,
+                                                    img/new1-desktop@2.png 540w
+                                                "
+                                                sizes="(max-width: 767px) 130px, (max-width: 1023px) 324px, 270px"
+                                                alt="Фото 1"
+                                            />
+                                        </picture>
+                                    </div>
                                     <h3>Necklace with amethyst</h3>
                                     <p>$ 145</p></a
                                 >
                             </li>
-                            <li class="new__card card">
-                                <a class="card__link" href="#">
-                                    <picture>
-                                        <!-- 1х: 130px; 2x: 260px -->
-                                        <source
-                                            type="image/webp"
-                                            media="(max-width: 767px)"
-                                            srcset="
-                                                img/new2-mobile.webp   1x,
-                                                img/new2-mobile@2.webp 2x
-                                            "
-                                        />
-                                        <!-- 1х: 324px; 2x: 648px -->
-                                        <source
-                                            type="image/webp"
-                                            media="(max-width: 1023px)"
-                                            srcset="
-                                                img/new2-tablet.webp   1x,
-                                                img/new2-tablet@2.webp 2x
-                                            "
-                                        />
-                                        <!-- 1х: 270px; 2x: 540px -->
-                                        <source
-                                            type="image/webp"
-                                            srcset="
-                                                img/new2-desktop.webp   1x,
-                                                img/new2-desktop@2.webp 2x
-                                            "
-                                        />
-                                        <!-- 1х: 270px; 2x: 540px -->
-                                        <img
-                                            src="img/blog3-desktop.png"
-                                            srcset="
-                                                img/new2-desktop.png   270w,
-                                                img/new2-desktop@2.png 540w
-                                            "
-                                            sizes="(max-width: 767px) 130px, (max-width: 1023px) 324px, 270px"
-                                            alt="Фото 1"
-                                        />
-                                    </picture>
+                            <li class="new__card card swiper-slide">
+                                <a class="card__link" href="#"
+                                    ><div class="card__img-wrap">
+                                        <picture>
+                                            <!-- 1х: 270px; 2x: 540px -->
+                                            <source
+                                                type="image/webp"
+                                                srcset="
+                                                    img/new2-desktop.webp   1x,
+                                                    img/new2-desktop@2.webp 2x
+                                                "
+                                            />
+                                            <!-- 1х: 270px; 2x: 540px -->
+                                            <img
+                                                src="img/new2-desktop.png"
+                                                srcset="
+                                                    img/new2-desktop.png   270w,
+                                                    img/new2-desktop@2.png 540w
+                                                "
+                                                sizes="(max-width: 767px) 130px, (max-width: 1023px) 324px, 270px"
+                                                alt="Фото 1"
+                                            />
+                                        </picture>
+                                    </div>
                                     <h3>Layered сhoker</h3>
                                     <p>$ 115</p></a
                                 >
                             </li>
-                            <li class="new__card card">
-                                <a class="card__link" href="#">
-                                    <picture>
-                                        <!-- 1х: 130px; 2x: 260px -->
-                                        <source
-                                            type="image/webp"
-                                            media="(max-width: 767px)"
-                                            srcset="
-                                                img/new3-mobile.webp   1x,
-                                                img/new3-mobile@2.webp 2x
-                                            "
-                                        />
-                                        <!-- 1х: 324px; 2x: 648px -->
-                                        <source
-                                            type="image/webp"
-                                            media="(max-width: 1023px)"
-                                            srcset="
-                                                img/new3-tablet.webp   1x,
-                                                img/new3-tablet@2.webp 2x
-                                            "
-                                        />
-                                        <!-- 1х: 270px; 2x: 540px -->
-                                        <source
-                                            type="image/webp"
-                                            srcset="
-                                                img/new3-desktop.webp   1x,
-                                                img/new3-desktop@2.webp 2x
-                                            "
-                                        />
-                                        <!-- 1х: 270px; 2x: 540px -->
-                                        <img
-                                            src="img/blog3-desktop.png"
-                                            srcset="
-                                                img/new3-desktop.png   270w,
-                                                img/new3-desktop@2.png 540w
-                                            "
-                                            sizes="(max-width: 767px) 130px, (max-width: 1023px) 324px, 270px"
-                                            alt="Фото 1"
-                                        />
-                                    </picture>
+                            <li class="new__card card swiper-slide">
+                                <a class="card__link" href="#"
+                                    ><div class="card__img-wrap">
+                                        <picture>
+                                            <!-- 1х: 270px; 2x: 540px -->
+                                            <source
+                                                type="image/webp"
+                                                srcset="
+                                                    img/new3-desktop.webp   1x,
+                                                    img/new3-desktop@2.webp 2x
+                                                "
+                                            />
+                                            <!-- 1х: 270px; 2x: 540px -->
+                                            <img
+                                                src="img/new3-desktop.png"
+                                                srcset="
+                                                    img/new3-desktop.png   270w,
+                                                    img/new3-desktop@2.png 540w
+                                                "
+                                                sizes="(max-width: 767px) 130px, (max-width: 1023px) 324px, 270px"
+                                                alt="Фото 1"
+                                            />
+                                        </picture>
+                                    </div>
                                     <h3>Gold chain</h3>
                                     <p>$ 215</p></a
                                 >
                             </li>
-                            <li class="new__card card">
-                                <a class="card__link" href="#">
-                                    <picture>
-                                        <!-- 1х: 130px; 2x: 260px -->
-                                        <source
-                                            type="image/webp"
-                                            media="(max-width: 767px)"
-                                            srcset="
-                                                img/new4-mobile.webp   1x,
-                                                img/new4-mobile@2.webp 2x
-                                            "
-                                        />
-                                        <!-- 1х: 324px; 2x: 648px -->
-                                        <source
-                                            type="image/webp"
-                                            media="(max-width: 1023px)"
-                                            srcset="
-                                                img/new4-tablet.webp   1x,
-                                                img/new4-tablet@2.webp 2x
-                                            "
-                                        />
-                                        <!-- 1х: 270px; 2x: 540px -->
-                                        <source
-                                            type="image/webp"
-                                            srcset="
-                                                img/new4-desktop.webp   1x,
-                                                img/new4-desktop@2.webp 2x
-                                            "
-                                        />
-                                        <!-- 1х: 270px; 2x: 540px -->
-                                        <img
-                                            src="img/blog3-desktop.png"
-                                            srcset="
-                                                img/new4-desktop.png   270w,
-                                                img/new4-desktop@2.png 540w
-                                            "
-                                            sizes="(max-width: 767px) 130px, (max-width: 1023px) 324px, 270px"
-                                            alt="Фото 1"
-                                        />
-                                    </picture>
+                            <li class="new__card card swiper-slide">
+                                <a class="card__link" href="#"
+                                    ><div class="card__img-wrap">
+                                        <picture>
+                                            <!-- 1х: 270px; 2x: 540px -->
+                                            <source
+                                                type="image/webp"
+                                                srcset="
+                                                    img/new4-desktop.webp   1x,
+                                                    img/new4-desktop@2.webp 2x
+                                                "
+                                            />
+                                            <!-- 1х: 270px; 2x: 540px -->
+                                            <img
+                                                src="img/new4-desktop.png"
+                                                srcset="
+                                                    img/new4-desktop.png   270w,
+                                                    img/new4-desktop@2.png 540w
+                                                "
+                                                sizes="(max-width: 767px) 130px, (max-width: 1023px) 324px, 270px"
+                                                alt="Фото 1"
+                                            />
+                                        </picture>
+                                    </div>
                                     <h3>Galaxy earrings</h3>
+                                    <p>$ 95</p></a
+                                >
+                            </li>
+                            <li class="new__card card swiper-slide">
+                                <a class="card__link" href="#"
+                                    ><div class="card__img-wrap">
+                                        <picture>
+                                            <!-- 1х: 270px; 2x: 540px -->
+                                            <source
+                                                type="image/webp"
+                                                srcset="
+                                                    img/new5-desktop.webp   1x,
+                                                    img/new5-desktop@2.webp 2x
+                                                "
+                                            />
+                                            <!-- 1х: 270px; 2x: 540px -->
+                                            <img
+                                                src="img/new5-desktop.png"
+                                                srcset="
+                                                    img/new5-desktop.png   270w,
+                                                    img/new5-desktop@2.png 540w
+                                                "
+                                                sizes="(max-width: 767px) 130px, (max-width: 1023px) 324px, 270px"
+                                                alt="Фото 5"
+                                            />
+                                        </picture>
+                                    </div>
+                                    <h3>Double pearl earrings</h3>
+                                    <p>$ 115</p></a
+                                >
+                            </li>
+                            <li class="new__card card swiper-slide">
+                                <a class="card__link" href="#"
+                                    ><div class="card__img-wrap">
+                                        <picture>
+                                            <!-- 1х: 270px; 2x: 540px -->
+                                            <source
+                                                type="image/webp"
+                                                srcset="
+                                                    img/new6-desktop.webp   1x,
+                                                    img/new6-desktop@2.webp 2x
+                                                "
+                                            />
+                                            <!-- 1х: 270px; 2x: 540px -->
+                                            <img
+                                                src="img/new6-desktop.png"
+                                                srcset="
+                                                    img/new6-desktop.png   270w,
+                                                    img/new6-desktop@2.png 540w
+                                                "
+                                                sizes="(max-width: 767px) 130px, (max-width: 1023px) 324px, 270px"
+                                                alt="Фото 6"
+                                            />
+                                        </picture>
+                                    </div>
+                                    <h3>Choker with gold bead</h3>
+                                    <p>$ 55</p></a
+                                >
+                            </li>
+                            <li class="new__card card swiper-slide">
+                                <a class="card__link" href="#"
+                                    ><div class="card__img-wrap">
+                                        <picture>
+                                            <!-- 1х: 270px; 2x: 540px -->
+                                            <source
+                                                type="image/webp"
+                                                srcset="
+                                                    img/new7-desktop.webp   1x,
+                                                    img/new7-desktop@2.webp 2x
+                                                "
+                                            />
+                                            <!-- 1х: 270px; 2x: 540px -->
+                                            <img
+                                                src="img/new7-desktop.png"
+                                                srcset="
+                                                    img/new7-desktop.png   270w,
+                                                    img/new7-desktop@2.png 540w
+                                                "
+                                                sizes="(max-width: 767px) 130px, (max-width: 1023px) 324px, 270px"
+                                                alt="Фото 7"
+                                            />
+                                        </picture>
+                                    </div>
+                                    <h3>Gold layered necklace</h3>
+                                    <p>$ 155</p></a
+                                >
+                            </li>
+                            <li class="new__card card swiper-slide">
+                                <a class="card__link" href="#"
+                                    ><div class="card__img-wrap">
+                                        <picture>
+                                            <!-- 1х: 270px; 2x: 540px -->
+                                            <source
+                                                type="image/webp"
+                                                srcset="
+                                                    img/new8-desktop.webp   1x,
+                                                    img/new8-desktop@2.webp 2x
+                                                "
+                                            />
+                                            <!-- 1х: 270px; 2x: 540px -->
+                                            <img
+                                                src="img/new8-desktop.png"
+                                                srcset="
+                                                    img/new8-desktop.png   270w,
+                                                    img/new8-desktop@2.png 540w
+                                                "
+                                                sizes="(max-width: 767px) 130px, (max-width: 1023px) 324px, 270px"
+                                                alt="Фото 8"
+                                            />
+                                        </picture>
+                                    </div>
+                                    <h3>Blue gemstone pendant</h3>
+                                    <p>$ 105</p></a
+                                >
+                            </li>
+                            <li class="new__card card swiper-slide">
+                                <a class="card__link" href="#"
+                                    ><div class="card__img-wrap">
+                                        <picture>
+                                            <!-- 1х: 270px; 2x: 540px -->
+                                            <source
+                                                type="image/webp"
+                                                srcset="
+                                                    img/new9-desktop.webp   1x,
+                                                    img/new9-desktop@2.webp 2x
+                                                "
+                                            />
+                                            <!-- 1х: 270px; 2x: 540px -->
+                                            <img
+                                                src="img/new9-desktop.png"
+                                                srcset="
+                                                    img/new9-desktop.png   270w,
+                                                    img/new9-desktop@2.png 540w
+                                                "
+                                                sizes="(max-width: 767px) 130px, (max-width: 1023px) 324px, 270px"
+                                                alt="Фото 9"
+                                            />
+                                        </picture>
+                                    </div>
+                                    <h3>Boho earrings</h3>
+                                    <p>$ 75</p></a
+                                >
+                            </li>
+                            <li class="new__card card swiper-slide">
+                                <a class="card__link" href="#"
+                                    ><div class="card__img-wrap">
+                                        <picture>
+                                            <!-- 1х: 270px; 2x: 540px -->
+                                            <source
+                                                type="image/webp"
+                                                srcset="
+                                                    img/new10-desktop.webp   1x,
+                                                    img/new10-desktop@2.webp 2x
+                                                "
+                                            />
+                                            <!-- 1х: 270px; 2x: 540px -->
+                                            <img
+                                                src="img/new10-desktop.png"
+                                                srcset="
+                                                    img/new10-desktop.png   270w,
+                                                    img/new10-desktop@2.png 540w
+                                                "
+                                                sizes="(max-width: 767px) 130px, (max-width: 1023px) 324px, 270px"
+                                                alt="Фото 10"
+                                            />
+                                        </picture>
+                                    </div>
+                                    <h3>Gold bird necklace</h3>
+                                    <p>$ 135</p></a
+                                >
+                            </li>
+                            <li class="new__card card swiper-slide">
+                                <a class="card__link" href="#"
+                                    ><div class="card__img-wrap">
+                                        <picture>
+                                            <!-- 1х: 270px; 2x: 540px -->
+                                            <source
+                                                type="image/webp"
+                                                srcset="
+                                                    img/new11-desktop.webp   1x,
+                                                    img/new11-desktop@2.webp 2x
+                                                "
+                                            />
+                                            <!-- 1х: 270px; 2x: 540px -->
+                                            <img
+                                                src="img/new11-desktop.png"
+                                                srcset="
+                                                    img/new11-desktop.png   270w,
+                                                    img/new11-desktop@2.png 540w
+                                                "
+                                                sizes="(max-width: 767px) 130px, (max-width: 1023px) 324px, 270px"
+                                                alt="Фото 11"
+                                            />
+                                        </picture>
+                                    </div>
+                                    <h3>Black leather choker</h3>
+                                    <p>$ 85</p></a
+                                >
+                            </li>
+                            <li class="new__card card swiper-slide">
+                                <a class="card__link" href="#"
+                                    ><div class="card__img-wrap">
+                                        <picture>
+                                            <!-- 1х: 270px; 2x: 540px -->
+                                            <source
+                                                type="image/webp"
+                                                srcset="
+                                                    img/new13-desktop.webp   1x,
+                                                    img/new13-desktop@2.webp 2x
+                                                "
+                                            />
+                                            <!-- 1х: 270px; 2x: 540px -->
+                                            <img
+                                                src="img/new13-desktop.png"
+                                                srcset="
+                                                    img/new13-desktop.png   270w,
+                                                    img/new13-desktop@2.png 540w
+                                                "
+                                                sizes="(max-width: 767px) 130px, (max-width: 1023px) 324px, 270px"
+                                                alt="Фото 13"
+                                            />
+                                        </picture>
+                                    </div>
+                                    <h3>Elephant earrings</h3>
                                     <p>$ 95</p></a
                                 >
                             </li>
                         </ul>
                     </div>
-                    <ol class="new__bullets">
-                        <li class="new__numbers">
-                            <button class="new__bullet"></button>
-                        </li>
-                        <li class="new__numbers">
-                            <button class="new__bullet"></button>
-                        </li>
-                        <li class="new__numbers">
-                            <button class="new__bullet"></button>
-                        </li>
+                    <ol class="new__bullets swiper-pagination">
+                        <li class="new__numbers swiper-pagination-bullet">1</li>
+                        <li class="new__numbers">2</li>
+                        <li class="new__numbers">3</li>
                     </ol>
                 </div>
             </section>
@@ -377,44 +535,46 @@
                     <a class="page-link" href="#">Read all</a>
                     <ul class="blog__list">
                         <li class="blog__item">
-                            <picture>
-                                <!-- 1х: 290px; 2x: 580px -->
-                                <source
-                                    type="image/webp"
-                                    media="(max-width: 767px)"
-                                    srcset="
-                                        img/blog1-mobile.webp   1x,
-                                        img/blog1-mobile@2.webp 2x
-                                    "
-                                />
-                                <!-- 1х: 339px; 2x: 678px -->
-                                <source
-                                    type="image/webp"
-                                    media="(max-width: 1023px)"
-                                    srcset="
-                                        img/blog1-tablet.webp   1x,
-                                        img/blog1-tablet@2.webp 2x
-                                    "
-                                />
-                                <!-- 1х: 285px; 2x: 570px -->
-                                <source
-                                    type="image/webp"
-                                    srcset="
-                                        img/blog1-desktop.webp   1x,
-                                        img/blog1-desktop@2.webp 2x
-                                    "
-                                />
-                                <!-- 1х: 285px; 2x: 570px -->
-                                <img
-                                    src="img/blog1-desktop.png"
-                                    srcset="
-                                        img/blog1-desktop.png   285w,
-                                        img/blog1-desktop@2.png 570w
-                                    "
-                                    sizes="(max-width: 767px) 290px, (max-width: 1023px) 339px, 285px"
-                                    alt="Фото 1"
-                                />
-                            </picture>
+                            <div class="blog__img">
+                                <picture>
+                                    <!-- 1х: 290px; 2x: 580px -->
+                                    <source
+                                        type="image/webp"
+                                        media="(max-width: 767px)"
+                                        srcset="
+                                            img/blog1-mobile.webp   1x,
+                                            img/blog1-mobile@2.webp 2x
+                                        "
+                                    />
+                                    <!-- 1х: 339px; 2x: 678px -->
+                                    <source
+                                        type="image/webp"
+                                        media="(max-width: 1023px)"
+                                        srcset="
+                                            img/blog1-tablet.webp   1x,
+                                            img/blog1-tablet@2.webp 2x
+                                        "
+                                    />
+                                    <!-- 1х: 285px; 2x: 570px -->
+                                    <source
+                                        type="image/webp"
+                                        srcset="
+                                            img/blog1-desktop.webp   1x,
+                                            img/blog1-desktop@2.webp 2x
+                                        "
+                                    />
+                                    <!-- 1х: 285px; 2x: 570px -->
+                                    <img
+                                        src="img/blog1-desktop.png"
+                                        srcset="
+                                            img/blog1-desktop.png   285w,
+                                            img/blog1-desktop@2.png 570w
+                                        "
+                                        sizes="(max-width: 767px) 290px, (max-width: 1023px) 339px, 285px"
+                                        alt="Фото 1"
+                                    />
+                                </picture>
+                            </div>
                             <article class="blog__article">
                                 <time class="blog__date"
                                     >September 30, 2019</time
@@ -426,44 +586,46 @@
                             </article>
                         </li>
                         <li class="blog__item">
-                            <picture>
-                                <!-- 1х: 290px; 2x: 580px -->
-                                <source
-                                    type="image/webp"
-                                    media="(max-width: 767px)"
-                                    srcset="
-                                        img/blog2-mobile.webp   1x,
-                                        img/blog2-mobile@2.webp 2x
-                                    "
-                                />
-                                <!-- 1х: 339px; 2x: 678px -->
-                                <source
-                                    type="image/webp"
-                                    media="(max-width: 1023px)"
-                                    srcset="
-                                        img/blog2-tablet.webp   1x,
-                                        img/blog2-tablet@2.webp 2x
-                                    "
-                                />
-                                <!-- 1х: 285px; 2x: 570px -->
-                                <source
-                                    type="image/webp"
-                                    srcset="
-                                        img/blog2-desktop.webp   1x,
-                                        img/blog2-desktop@2.webp 2x
-                                    "
-                                />
-                                <!-- 1х: 285px; 2x: 570px -->
-                                <img
-                                    src="img/blog1-desktop.png"
-                                    srcset="
-                                        img/blog2-desktop.png   285w,
-                                        img/blog2-desktop@2.png 570w
-                                    "
-                                    sizes="(max-width: 767px) 290px, (max-width: 1023px) 339px, 285px"
-                                    alt="Фото 2"
-                                />
-                            </picture>
+                            <div class="blog__img">
+                                <picture>
+                                    <!-- 1х: 290px; 2x: 580px -->
+                                    <source
+                                        type="image/webp"
+                                        media="(max-width: 767px)"
+                                        srcset="
+                                            img/blog2-mobile.webp   1x,
+                                            img/blog2-mobile@2.webp 2x
+                                        "
+                                    />
+                                    <!-- 1х: 339px; 2x: 678px -->
+                                    <source
+                                        type="image/webp"
+                                        media="(max-width: 1023px)"
+                                        srcset="
+                                            img/blog2-tablet.webp   1x,
+                                            img/blog2-tablet@2.webp 2x
+                                        "
+                                    />
+                                    <!-- 1х: 285px; 2x: 570px -->
+                                    <source
+                                        type="image/webp"
+                                        srcset="
+                                            img/blog2-desktop.webp   1x,
+                                            img/blog2-desktop@2.webp 2x
+                                        "
+                                    />
+                                    <!-- 1х: 285px; 2x: 570px -->
+                                    <img
+                                        src="img/blog1-desktop.png"
+                                        srcset="
+                                            img/blog2-desktop.png   285w,
+                                            img/blog2-desktop@2.png 570w
+                                        "
+                                        sizes="(max-width: 767px) 290px, (max-width: 1023px) 339px, 285px"
+                                        alt="Фото 2"
+                                    />
+                                </picture>
+                            </div>
                             <article class="blog__article">
                                 <time class="blog__date"
                                     >September 23, 2019</time
@@ -475,44 +637,46 @@
                             </article>
                         </li>
                         <li class="blog__item blog__item--large">
-                            <picture>
-                                <!-- 1х: 290px; 2x: 580px -->
-                                <source
-                                    type="image/webp"
-                                    media="(max-width: 767px)"
-                                    srcset="
-                                        img/blog3-mobile.webp   1x,
-                                        img/blog3-mobile@2.webp 2x
-                                    "
-                                />
-                                <!-- 1х: 339px; 2x: 678px -->
-                                <source
-                                    type="image/webp"
-                                    media="(max-width: 1023px)"
-                                    srcset="
-                                        img/blog3-tablet.webp   1x,
-                                        img/blog3-tablet@2.webp 2x
-                                    "
-                                />
-                                <!-- 1х: 285px; 2x: 570px -->
-                                <source
-                                    type="image/webp"
-                                    srcset="
-                                        img/blog3-desktop.webp   1x,
-                                        img/blog3-desktop@2.webp 2x
-                                    "
-                                />
-                                <!-- 1х: 285px; 2x: 570px -->
-                                <img
-                                    src="img/blog3-desktop.png"
-                                    srcset="
-                                        img/blog3-desktop.png   285w,
-                                        img/blog3-desktop@2.png 570w
-                                    "
-                                    sizes="(max-width: 767px) 290px, (max-width: 1023px) 339px, 285px"
-                                    alt="Фото 3"
-                                />
-                            </picture>
+                            <div class="blog__img">
+                                <picture>
+                                    <!-- 1х: 290px; 2x: 580px -->
+                                    <source
+                                        type="image/webp"
+                                        media="(max-width: 767px)"
+                                        srcset="
+                                            img/blog3-mobile.webp   1x,
+                                            img/blog3-mobile@2.webp 2x
+                                        "
+                                    />
+                                    <!-- 1х: 339px; 2x: 678px -->
+                                    <source
+                                        type="image/webp"
+                                        media="(max-width: 1023px)"
+                                        srcset="
+                                            img/blog3-tablet.webp   1x,
+                                            img/blog3-tablet@2.webp 2x
+                                        "
+                                    />
+                                    <!-- 1х: 285px; 2x: 570px -->
+                                    <source
+                                        type="image/webp"
+                                        srcset="
+                                            img/blog3-desktop.webp   1x,
+                                            img/blog3-desktop@2.webp 2x
+                                        "
+                                    />
+                                    <!-- 1х: 285px; 2x: 570px -->
+                                    <img
+                                        src="img/blog3-desktop.png"
+                                        srcset="
+                                            img/blog3-desktop.png   285w,
+                                            img/blog3-desktop@2.png 570w
+                                        "
+                                        sizes="(max-width: 767px) 290px, (max-width: 1023px) 339px, 285px"
+                                        alt="Фото 3"
+                                    />
+                                </picture>
+                            </div>
                             <article class="blog__article">
                                 <time class="blog__date"
                                     >September 16, 2019</time
@@ -701,6 +865,7 @@
         <!-- <svg width="" height="" role="img" aria-label="">
     <use xlink:href="img/sprite.svg#icon-envelope"></use>
   </svg> -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>
