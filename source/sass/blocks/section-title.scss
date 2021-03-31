@@ -10,6 +10,12 @@
         text-transform: uppercase;
         color: $white;
     }
+
+    &--promo-catalog {
+        @include font(3.4rem, 130%, 700);
+        color: $white;
+        margin-bottom: 0;
+    }
 }
 @media (max-width: $tablet) {
     &--promo {

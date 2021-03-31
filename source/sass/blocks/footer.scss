@@ -2,14 +2,22 @@
     background-color: $black;
     color: $white;
     margin-top: auto;
-    padding-top: 100px;
+    padding-top: 90px;
     padding-bottom: 100px;
 }
 
 .footer__container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 30px;
+    box-sizing: content-box;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.footer__subscribe {
+    width: 500px;
 }
 
 .footer__nav-links {
@@ -30,14 +38,38 @@
 }
 
 @media (max-width: $desktop) {
+    .footer {
+        padding-top: 50px;
+        padding-bottom: 54px;
+    }
+
+    .footer__container {
+        padding: 0 150px 0 45px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .footer__subscribe {
-        flex-grow: 1;
-        flex-basis: 100%;
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin-bottom: 46px;
+    }
+
+    .footer__nav-links {
+        gap: 22px;
+    }
+
+    .footer__nav-link {
+        text-align: left;
+        word-break: keep-all;
     }
 }
+
 @media (max-width: $tablet) {
     .footer__container {
         flex-direction: column;
+        padding: 0 15px;
     }
 
     .footer__social {

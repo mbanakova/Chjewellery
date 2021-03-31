@@ -1,14 +1,15 @@
 .subscribe h3 {
     @include fields();
     @include font(3.4rem, 130%, 700);
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     font-family: $cormorant;
+    letter-spacing: 0.02em;
 }
 
 .subscribe p {
     @include fields();
     color: $grey;
-    margin-bottom: 38px;
+    margin-bottom: 34px;
 }
 
 .subscribe__form {
@@ -57,4 +58,25 @@
 }
 
 @media (max-width: $desktop) {
+    .subscribe h3 {
+        letter-spacing: 0.03em;
+    }
+
+    .subscribe__form button {
+        padding: 10px;
+    }
+}
+@media (max-width: $tablet) {
+    .subscribe__form input {
+        padding-right: 10px;
+        flex-grow: 0;
+        width: 100%;
+    }
+    .subscribe__form button {
+        display: flex;
+        padding-right: 0;
+        word-wrap: none;
+        flex-basis: 180px;
+        align-items: center;
+    }
 }

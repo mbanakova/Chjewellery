@@ -8,6 +8,20 @@
     justify-content: stretch;
     align-items: center;
     font-family: $cormorant;
+
+    @media (min-resolution: $extra) {
+        background-image: url("../img/promo@2.png");
+    }
+
+    &--catalog {
+        background-image: url("../img/promo-catalog.png");
+        min-height: 261px;
+        margin-bottom: 80px;
+
+        @media (min-resolution: $extra) {
+            background-image: url("../img/promo-catalog@2.png");
+        }
+    }
 }
 
 .promo__container {
@@ -25,6 +39,10 @@
     color: $white;
     font-family: $cormorant;
     font-style: italic;
+}
+
+.promo--catalog p {
+    @include font(2.2rem, 130%, 400);
 }
 
 @media (max-width: $tablet) {
