@@ -76,4 +76,13 @@
     }
   });
 })();
+
+let filter = document.querySelector(".filter");
+let filterToggle = document.querySelector(".catalog__button");
+filter.classList.add("filter--js");
+filterToggle.addEventListener("click", () => {
+  // filter.classList.add("filter--open");
+  filter.classList.remove("filter--js");
+});
+console.log(123);
 //# sourceMappingURL=script.js.map

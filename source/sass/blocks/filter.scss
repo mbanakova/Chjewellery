@@ -6,10 +6,10 @@
 
 .filter__close {
     position: absolute;
-    top: -15px;
-    right: -15px;
-    width: 30px;
-    height: 30px;
+    top: -16px;
+    right: -16px;
+    width: 32px;
+    height: 32px;
     font-size: 0;
     border-radius: 50%;
     background-color: $black;
@@ -142,4 +142,23 @@
     background-color: $white;
     color: $accent;
     border: 1px solid $accent;
+}
+
+@media (max-width: $desktop) {
+    .filter {
+        box-shadow: 0px 5px 32px rgba(219, 213, 208, 0.24);
+    }
+
+    .filter fieldset {
+        padding: 70px 25px 28px;
+        position: relative;
+        border: none;
+        border-bottom: 1px solid $accent;
+    }
+}
+
+@media (max-width: $tablet) {
+    & .filter {
+        max-width: 270px;
+    }
 }

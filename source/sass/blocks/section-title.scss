@@ -15,6 +15,7 @@
         @include font(3.4rem, 130%, 700);
         color: $white;
         margin-bottom: 0;
+        text-transform: uppercase;
     }
 }
 @media (max-width: $tablet) {

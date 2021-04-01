@@ -47,9 +47,13 @@
 
 @media (max-width: $tablet) {
     .promo__container {
-        padding: 0;
+        padding: 0 15px;
     }
     .promo__container p {
         @include font(3.4rem, 130%, 400);
+    }
+
+    .promo--catalog p {
+        @include font(2.2rem, 130%, 400);
     }
 }
