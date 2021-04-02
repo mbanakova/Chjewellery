@@ -31,7 +31,27 @@
 
     & legend {
         position: absolute;
+        width: 100%;
         top: 28px;
+
+        &::after {
+            position: absolute;
+            content: "";
+            top: 50%;
+            right: 60px;
+            transform: translateY(-50%) rotate(-45deg);
+            width: 11px;
+            height: 11px;
+            border-bottom: 2px solid $accent;
+            border-left: 2px solid $accent;
+            transition: 0.1s ease;
+        }
+
+        &.active::after {
+            border: none;
+            border-top: 2px solid $accent;
+            border-right: 2px solid $accent;
+        }
     }
 }
 

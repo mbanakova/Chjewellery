@@ -95,10 +95,30 @@
 let filter = document.querySelector(".filter");
 let filterToggle = document.querySelector(".catalog__button");
 
-filter.classList.add("filter--js");
+if (filter) {
+    filter.classList.add("filter--js");
+    filterToggle.addEventListener("click", () => {
+        filter.classList.remove("filter--js");
+    });
+}
 
-filterToggle.addEventListener("click", () => {
-    // filter.classList.add("filter--open");
-    filter.classList.remove("filter--js");
+///tabs
+
+let tabs = document.querySelectorAll(".tabs__triggers-item");
+let bigImage = document.querySelector(".tabs__content");
+
+tabs.forEach((tab) => {
+    tab.addEventListener("click", (event) => {
+        console.log(event.target);
+        event.preventDefault();
+
+        tabs.forEach((elem) =>
+            elem.classList.remove("tabs__triggers-item--active")
+        );
+
+        bigImage.src = event.target.src;
+        bigImage.srcset = event.target.srcset;
+
+        tab.classList.add("tabs__triggers-item--active");
+    });
 });
-console.log(123);

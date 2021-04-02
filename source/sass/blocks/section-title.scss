@@ -4,6 +4,7 @@
     margin-bottom: 35px;
     font-family: $cormorant;
     text-align: center;
+    text-transform: capitalize;
 
     &--promo {
         @include font(4.5rem, 130%, 700);

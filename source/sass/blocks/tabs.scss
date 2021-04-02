@@ -1,0 +1,66 @@
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    position: relative;
+}
+
+.tabs__triggers {
+    @include ul();
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.tabs__content {
+    flex-basis: 470px;
+    width: 100%;
+    height: 435px;
+    object-fit: cover;
+    object-position: bottom;
+    overflow: hidden;
+}
+
+.tabs__count {
+    display: none;
+}
+
+@media (max-width: $desktop) {
+    .tabs {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 14px;
+    }
+
+    .tabs__triggers {
+        flex-direction: row;
+        gap: 14px;
+    }
+
+    .tabs__content {
+        flex-basis: 319px;
+        height: 286px;
+    }
+}
+
+@media (max-width: $tablet) {
+    .tabs {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 14px;
+    }
+
+    .tabs__triggers {
+        display: none;
+    }
+
+    .tabs__count {
+        @include font(1.4rem, 130%, 500);
+        display: block;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

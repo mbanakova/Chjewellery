@@ -15,8 +15,8 @@
     @include fields();
     @include font(1.8rem, 130%, 500);
     padding-right: 100px;
-    position: relative;
     cursor: pointer;
+    position: relative;
 
     &::after {
         position: absolute;
