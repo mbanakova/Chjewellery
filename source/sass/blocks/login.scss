@@ -1,0 +1,167 @@
+.login {
+    display: none;
+
+    &--open {
+        display: block;
+
+        & .login__overlay {
+            opacity: 1;
+            z-index: 999;
+            background-color: rgba($white, 0.5);
+        }
+    }
+}
+
+.login__overlay {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    transition: background-color 2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__container {
+    width: 430px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: $beige;
+
+    & button[type="button"] {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 12px;
+        right: 12px;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+
+        &::before,
+        &::after {
+            position: absolute;
+            content: "";
+            width: 20px;
+            height: 2px;
+            background-color: $dark;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%) rotate(45deg);
+        }
+
+        &::after {
+            transform: translate(-50%) rotate(135deg);
+        }
+    }
+
+    & h2 {
+        @include font(3.4rem, 130%, 700);
+        @include fields();
+        margin-bottom: 20px;
+        font-family: $cormorant;
+        text-align: center;
+        text-transform: capitalize;
+    }
+}
+
+.login__form {
+    padding: 60px 45px;
+
+    & button[type="submit"] {
+        @include font(1.6rem, 130%, 500);
+        padding: 28px 30px;
+        margin-bottom: 20px;
+        border: none;
+        font-family: $poppins;
+        display: block;
+        cursor: pointer;
+        text-align: center;
+        background-color: $accent;
+        color: $white;
+        text-decoration: none;
+        text-transform: capitalize;
+        width: 100%;
+    }
+}
+
+.login__input {
+    position: relative;
+    margin-bottom: 10px;
+
+    & input {
+        @include font(1.4rem, 130%, 500);
+        padding: 15px 0;
+        width: 100%;
+        height: 100%;
+        font-family: $poppins;
+        border: 0;
+        outline: 0;
+        color: $grey;
+        background-color: transparent;
+    }
+
+    & label {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        border-bottom: 1px solid $dark;
+    }
+
+    & span {
+        @include font(1.4rem, 130%, 500);
+        position: absolute;
+        left: 0;
+        bottom: 15px;
+        color: $grey;
+    }
+
+    & input:focus + label span,
+    & input:valid + label span {
+        @include font(1rem, 130%, 500);
+        transform: translateY(-200%);
+    }
+
+    // & input:focus + label::after,
+    // & input:valid + label::after {
+    //     transform: translateX(0%);
+    // }
+}
+
+.login__remind {
+    @include font(1.2rem, 130%, 500);
+    color: $grey;
+    display: block;
+    text-decoration: none;
+    text-align: right;
+    margin-bottom: 40px;
+}
+
+.login__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 5px;
+
+    & p {
+        @include fields();
+        @include font(1.4rem, 130%, 500);
+        color: $grey;
+    }
+}
+
+.login__sign-up {
+    @include font(1.4rem, 130%, 500);
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+}
