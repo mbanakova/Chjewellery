@@ -39,6 +39,11 @@
             margin-bottom: 0;
         }
 
+        &--promo-catalog {
+            margin-bottom: 0;
+            letter-spacing: normal;
+        }
+
         &--faq {
             margin-bottom: 47px;
         }
@@ -51,6 +56,10 @@
             @include font(3.8rem, 130%, 700);
             text-transform: uppercase;
             color: $white;
+        }
+
+        &--promo-catalog {
+            margin-bottom: 10px;
         }
 
         &--faq {

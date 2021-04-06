@@ -18,7 +18,7 @@
 }
 
 .filter fieldset {
-    padding: 70px 25px 28px;
+    padding: 66px 23px 28px;
     position: relative;
     border: 1px solid $accent;
     border-bottom: none;
@@ -31,15 +31,16 @@
 
     & legend {
         position: absolute;
-        width: 100%;
-        top: 28px;
+        width: 82%;
+        top: 24px;
+        left: 20px;
 
         &::after {
             position: absolute;
             content: "";
-            top: 50%;
-            right: 60px;
-            transform: translateY(-50%) rotate(-45deg);
+            top: 2px;
+            right: 0;
+            transform: rotate(-45deg);
             width: 11px;
             height: 11px;
             border-bottom: 2px solid $accent;
@@ -60,7 +61,7 @@
     margin-left: 10px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
 }
 
 .filter__item {
@@ -79,7 +80,7 @@
 .filter__item label {
     @include font(15px, 15px, 400);
     position: relative;
-    padding-left: 24px;
+    padding-left: 26px;
 
     &::before {
         position: absolute;
