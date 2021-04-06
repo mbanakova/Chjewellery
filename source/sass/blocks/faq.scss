@@ -60,13 +60,79 @@
     transition: 0.1s ease max-height;
 }
 
-@media (max-width: $tablet) {
-    .faq__item {
-        padding: 25px;
+@media (max-width: $desktop) {
+    .faq {
+        margin-bottom: 72px;
     }
 
-    .faq__item p,
+    .faq__item {
+        gap: 26px;
+        padding-bottom: 16px;
+
+        &:first-of-type {
+            padding-bottom: 42px;
+        }
+    }
+
     .faq__item h3 {
-        padding-right: 61px;
+        margin-left: 8px;
+
+        &::after {
+            position: absolute;
+            content: "";
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%) rotate(-45deg);
+            width: 16px;
+            height: 16px;
+            border-bottom: 2px solid $accent;
+            border-left: 2px solid $accent;
+            transition: 0.1s ease;
+        }
+    }
+
+    .faq__item p {
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: $tablet) {
+    .faq {
+        margin-bottom: 62px;
+    }
+
+    .faq__item {
+        padding: 16px 24px 2px;
+        gap: 15px;
+
+        &:first-of-type {
+            padding-bottom: 16px;
+        }
+
+        & h3 {
+            @include font(1.6rem, 22.4px, 500);
+            margin-left: 0;
+            padding-right: 30px;
+
+            &::after {
+                position: absolute;
+                content: "";
+                top: 0;
+                right: 2px;
+                width: 16px;
+                height: 16px;
+                transform: rotate(-45deg);
+            }
+
+            &.active::after {
+                top: 10px;
+            }
+        }
+
+        & p {
+            @include font(1.4rem, 20px, 400);
+            padding-left: 0;
+            padding-right: 35px;
+        }
     }
 }

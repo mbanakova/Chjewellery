@@ -68,6 +68,16 @@
     }
 }
 @media (max-width: $tablet) {
+    .subscribe h3 {
+        padding-right: 56px;
+        letter-spacing: 0.01em;
+        margin-bottom: 15px;
+    }
+
+    .subscribe p {
+        padding-right: 50px;
+    }
+
     .subscribe__form input {
         padding-right: 10px;
         flex-grow: 0;

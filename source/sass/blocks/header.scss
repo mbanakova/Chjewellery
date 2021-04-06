@@ -170,6 +170,8 @@
 
     .header__top {
         flex-wrap: wrap;
+        align-items: center;
+        padding-bottom: 0;
 
         &::after {
             display: none;
@@ -219,6 +221,11 @@
             background-color: rgba($white, 0.15);
             border-radius: 21px;
             width: 100%;
+            color: $white;
+
+            &::placeholder {
+                color: $white;
+            }
         }
 
         & span {
@@ -258,5 +265,21 @@
         @include pseudo();
         top: -5px;
         right: -8px;
+    }
+}
+
+@media (max-width: $tablet) {
+    .header {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .header--close.header {
+        height: 92px;
+    }
+
+    .header__logo svg {
+        width: 52px;
+        height: 52px;
     }
 }

@@ -9,7 +9,7 @@
 }
 
 .swiper-slide {
-    max-width: 270px;
+    max-width: 25%;
 }
 
 .swiper-button-next,
@@ -62,12 +62,26 @@
 
 @media (max-width: $desktop) {
     .swiper-slide {
-        max-width: 324px;
+        max-width: 50%;
     }
-}
 
-@media (max-width: $tablet) {
-    .swiper-slide {
-        max-width: 130px;
+    .swiper-button-next,
+    .swiper-button-prev {
+        top: 50px;
+        width: 40px;
+
+        & svg {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .swiper-button-prev {
+        left: 40px;
+    }
+
+    .swiper-button-next {
+        right: 40px;
+        transform: rotate(180deg);
     }
 }

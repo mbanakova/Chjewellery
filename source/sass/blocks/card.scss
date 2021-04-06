@@ -4,13 +4,7 @@
 
 .card__link {
     @include a();
-
-    & img {
-        min-width: 100%;
-        min-height: 100%;
-        margin-bottom: 0;
-        object-fit: cover;
-    }
+    width: 100%;
 }
 
 .card h3 {
@@ -26,20 +20,19 @@
 
 .card__img-wrap {
     width: 100%;
-    height: 284px;
+    height: auto;
     margin: 0 0 22px;
 }
 
 @media (max-width: $desktop) {
     .card__img-wrap {
         width: 100%;
-        height: 340px;
     }
 }
 
 @media (max-width: $tablet) {
     .card__img-wrap {
         width: 100%;
-        height: 136px;
+        margin-bottom: 15px;
     }
 }

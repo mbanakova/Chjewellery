@@ -29,3 +29,31 @@
     justify-content: center;
     gap: 8px;
 }
+
+@media (max-width: $desktop) {
+    .new {
+        margin-bottom: 116px;
+    }
+
+    .new__page-link {
+        margin-bottom: 56px;
+    }
+
+    .new__slider {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: $tablet) {
+    .new {
+        margin-bottom: 106px;
+    }
+
+    .new__page-link {
+        margin-bottom: 45px;
+    }
+
+    .new__slider {
+        margin-bottom: 4px;
+    }
+}

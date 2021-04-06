@@ -31,10 +31,30 @@
     }
 }
 
+@media (max-width: $desktop) {
+    .section-title {
+        margin-bottom: 20px;
+
+        &--promo {
+            margin-bottom: 0;
+        }
+
+        &--faq {
+            margin-bottom: 47px;
+        }
+    }
+}
+
 @media (max-width: $tablet) {
-    &--promo {
-        @include font(3.8rem, 130%, 700);
-        text-transform: uppercase;
-        color: $white;
+    .section-title {
+        &--promo {
+            @include font(3.8rem, 130%, 700);
+            text-transform: uppercase;
+            color: $white;
+        }
+
+        &--faq {
+            margin-bottom: 28px;
+        }
     }
 }

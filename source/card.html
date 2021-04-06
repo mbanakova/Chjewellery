@@ -60,7 +60,11 @@
             <div class="header__container container">
                 <div class="header__top">
                     <button class="header__burger"></button>
-                    <form action="GET" class="header__form">
+                    <form
+                        class="header__form"
+                        action="https://echo.htmlacademy.ru"
+                        method="GET"
+                    >
                         <svg
                             width="14"
                             height="14"
@@ -71,10 +75,15 @@
                                 xlink:href="img/sprite.svg#icon-magnifyer"
                             ></use>
                         </svg>
-                        <input type="text" class="text" id="search" />
-                        <label for="search">
-                            <span>Type here to search</span>
-                        </label>
+                        <input
+                            type="text"
+                            class="text"
+                            id="search"
+                            placeholder="Type here to search"
+                        />
+                        <label class="visually-hidden" for="search"
+                            >Search</label
+                        >
                     </form>
                     <a href="#" class="header__logo">
                         <svg
@@ -706,7 +715,11 @@
                 <div class="footer__subscribe subscribe">
                     <h3>The good stuff in your inbox</h3>
                     <p>News and updates from CH. No spam, we promise.</p>
-                    <form class="subscribe__form" action="POST">
+                    <form
+                        class="subscribe__form"
+                        action="https://echo.htmlacademy.ru"
+                        method="POST"
+                    >
                         <input type="email" id="footer-submit" required />
                         <label for="footer-submit">
                             <span class="subscribe__label">Your E-mail</span>

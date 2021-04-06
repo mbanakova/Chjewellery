@@ -1,7 +1,6 @@
 .page-link {
     @include a();
     @include font(1.6rem, 130%, 500);
-    // margin-bottom: 60px;
     position: relative;
     text-transform: capitalize;
 

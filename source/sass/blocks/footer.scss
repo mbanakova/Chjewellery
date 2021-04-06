@@ -56,17 +56,27 @@
         padding: 0 150px 0 45px;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .footer__subscribe {
         width: 100%;
         grid-column-start: 1;
         grid-column-end: 4;
-        margin-bottom: 46px;
+        margin-bottom: 44px;
+        margin-right: 0;
     }
 
     .footer__nav-links {
         gap: 22px;
+        padding-top: 0;
+        width: unset;
+        margin: 0;
+
+        &:nth-of-type(2) {
+            margin-left: 90px;
+            margin-right: auto;
+        }
     }
 
     .footer__nav-link {
@@ -88,7 +98,11 @@
         gap: 20px;
     }
 
-    .footer__nav-links:not(:last-of-type) {
-        margin-bottom: 20px;
+    .footer__nav-links {
+        margin-bottom: 44px;
+
+        &:nth-of-type(2) {
+            margin: 0 0 46px;
+        }
     }
 }

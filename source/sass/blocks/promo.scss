@@ -9,6 +9,20 @@
     align-items: center;
     font-family: $cormorant;
     margin-bottom: 120px;
+    box-shadow: 0px 4px 4px rgba($black, 0.25);
+    background-color: $accent;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba($brown, 0.7);
+        z-index: 1;
+    }
 
     @media (min-resolution: $extra) {
         background-image: url("../img/promo@2.png");
@@ -31,6 +45,8 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 5;
 }
 
 .promo__container p {
@@ -45,12 +61,41 @@
     @include font(2.2rem, 130%, 400);
 }
 
+@media (max-width: $desktop) {
+    .promo {
+        background-image: url("../img/promo-tab.png");
+        box-shadow: none;
+        margin-bottom: 70px;
+
+        @media (min-resolution: $extra) {
+            background-image: url("../img/promo-tab@2.png");
+        }
+    }
+
+    .promo__container {
+        padding: 0 45px;
+        margin-left: -15px;
+    }
+}
+
 @media (max-width: $tablet) {
+    .promo {
+        background-image: url("../img/promo-mob.png");
+        margin-bottom: 60px;
+
+        @media (min-resolution: $extra) {
+            background-image: url("../img/promo-mob@2.png");
+        }
+    }
+
     .promo__container {
         padding: 0 15px;
+        margin: 5px auto 0;
     }
+
     .promo__container p {
         @include font(3.4rem, 130%, 400);
+        margin-top: -7px;
     }
 
     .promo--catalog p {
