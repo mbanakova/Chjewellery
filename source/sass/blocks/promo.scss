@@ -8,6 +8,7 @@
     justify-content: stretch;
     align-items: center;
     font-family: $cormorant;
+    margin-bottom: 120px;
 
     @media (min-resolution: $extra) {
         background-image: url("../img/promo@2.png");
@@ -27,14 +28,13 @@
 .promo__container {
     padding: 60px 30px;
     flex-grow: 1;
-    gap: 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
 }
 
 .promo__container p {
-    @include font(3.8rem, 130%, 400);
+    @include font(3.8rem, 100%, 400);
     @include fields();
     color: $white;
     font-family: $cormorant;

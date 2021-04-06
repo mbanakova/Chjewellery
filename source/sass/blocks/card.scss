@@ -16,7 +16,7 @@
 .card h3 {
     @include fields();
     @include font(1.6rem, 130%, 500);
-    margin-bottom: 15px;
+    margin-bottom: 6px;
 }
 
 .card p {
@@ -27,7 +27,7 @@
 .card__img-wrap {
     width: 100%;
     height: 284px;
-    margin: 0 0 25px;
+    margin: 0 0 22px;
 }
 
 @media (max-width: $desktop) {

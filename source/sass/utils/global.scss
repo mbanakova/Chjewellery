@@ -16,14 +16,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
     overflow-x: hidden;
-
-    @media (min-width: $desktop) {
-        // шаблон медиа-запроса desktop-first
-    }
-
-    @media (min-resolution: $extra) {
-        // шаблон для фонового изображения на экранах с повышенной плотностью пикселей
-    }
 }
 
 body,
@@ -36,15 +28,14 @@ body,
 
 img {
     width: 100%;
-    // max-width: 100%;
     height: auto;
+    display: block;
+}
+
+svg {
     display: block;
 }
 
 main {
     flex-grow: 1;
-}
-
-section {
-    margin-bottom: 130px;
 }

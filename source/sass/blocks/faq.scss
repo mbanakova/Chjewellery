@@ -1,10 +1,21 @@
+.faq {
+    margin-bottom: 106px;
+}
+
+.faq__container {
+    max-width: 970px;
+}
+
 .faq__accordion {
     @include ul();
 }
 
 .faq__item {
-    padding: 50px 50px 50px 43px;
+    padding: 43px 50px 35px 43px;
     border: 1px solid $accent;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
 
     &:not(:last-of-type) {
         border-bottom: none;
@@ -24,8 +35,8 @@
         top: 50%;
         right: 0;
         transform: translateY(-50%) rotate(-45deg);
-        width: 20px;
-        height: 20px;
+        width: 10px;
+        height: 10px;
         border-bottom: 2px solid $accent;
         border-left: 2px solid $accent;
         transition: 0.1s ease;
@@ -41,8 +52,9 @@
 .faq__item p {
     @include fields();
     @include font(1.6rem, 130%, 400);
-    margin-top: 20px;
-    padding-right: 100px;
+    padding-right: 350px;
+    padding-left: 7px;
+    margin-bottom: 3px;
     max-height: 0;
     overflow: hidden;
     transition: 0.1s ease max-height;

@@ -1,12 +1,13 @@
 .page-link {
     @include a();
     @include font(1.6rem, 130%, 500);
-    margin-bottom: 70px;
+    // margin-bottom: 60px;
     position: relative;
+    text-transform: capitalize;
 
     &::after {
         @include pseudo();
-        bottom: -4px;
+        bottom: -5px;
         left: 0;
         width: 100%;
         height: 1px;

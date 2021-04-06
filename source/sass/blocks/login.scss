@@ -34,11 +34,12 @@
     background-color: $beige;
 
     & button[type="button"] {
+        // кнопка "закрыть"
         position: absolute;
         width: 20px;
         height: 20px;
-        top: 12px;
-        right: 12px;
+        top: 10px;
+        right: 10px;
         background-color: transparent;
         border: none;
         padding: 0;
@@ -164,4 +165,84 @@
     text-decoration: none;
     color: inherit;
     text-align: center;
+}
+
+@media (max-width: $desktop) {
+    .login__container {
+        width: 442px;
+
+        & button[type="button"] {
+            // кнопка "закрыть"
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            top: 10px;
+            right: 10px;
+            background-color: transparent;
+            border: none;
+            padding: 0;
+
+            &::before,
+            &::after {
+                position: absolute;
+                content: "";
+                width: 28px;
+                height: 2px;
+                background-color: $dark;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%) rotate(45deg);
+            }
+
+            &::after {
+                transform: translate(-50%) rotate(135deg);
+            }
+        }
+    }
+
+    .login__form {
+        padding: 60px 51px;
+    }
+}
+
+@media (max-width: $tablet) {
+    .login__container {
+        width: 270px;
+
+        & button[type="button"] {
+            // кнопка "закрыть"
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 10px;
+            right: 10px;
+            background-color: transparent;
+            border: none;
+            padding: 0;
+
+            &::before,
+            &::after {
+                position: absolute;
+                content: "";
+                width: 20px;
+                height: 2px;
+                background-color: $dark;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%) rotate(45deg);
+            }
+
+            &::after {
+                transform: translate(-50%) rotate(135deg);
+            }
+        }
+
+        & h2 {
+            @include font(2.4rem, 130%, 700);
+        }
+    }
+
+    .login__form {
+        padding: 45px 15px;
+    }
 }

@@ -19,8 +19,9 @@
     border: none;
     font-family: $poppins;
     position: absolute;
-    top: 50px;
+    top: 45px;
     z-index: 10;
+    width: 29px;
 
     &::after {
         content: "";
@@ -28,11 +29,11 @@
 }
 
 .swiper-button-prev {
-    left: 30px;
+    left: 14px;
 }
 
 .swiper-button-next {
-    right: 30px;
+    right: 28px;
     transform: rotate(180deg);
 }
 

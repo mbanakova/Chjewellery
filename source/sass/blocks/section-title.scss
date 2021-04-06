@@ -1,15 +1,17 @@
 .section-title {
     @include font(3.4rem, 130%, 700);
     @include fields();
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     font-family: $cormorant;
     text-align: center;
     text-transform: capitalize;
+    letter-spacing: 0.03em;
 
     &--promo {
-        @include font(4.5rem, 130%, 700);
+        @include font(4.5rem, 120%, 700);
         text-transform: uppercase;
         color: $white;
+        margin-bottom: 0;
     }
 
     &--promo-catalog {
@@ -18,7 +20,17 @@
         margin-bottom: 0;
         text-transform: uppercase;
     }
+
+    &--faq {
+        text-transform: none;
+        margin-bottom: 48px;
+    }
+
+    &--gallery {
+        margin-bottom: 30px;
+    }
 }
+
 @media (max-width: $tablet) {
     &--promo {
         @include font(3.8rem, 130%, 700);
