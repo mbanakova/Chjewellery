@@ -61,30 +61,30 @@
                 <div class="header__top">
                     <button class="header__burger"></button>
                     <form
-                    class="header__form"
-                    action="https://echo.htmlacademy.ru"
-                    method="GET"
-                >
-                    <svg
-                        width="14"
-                        height="14"
-                        role="img"
-                        aria-label="search"
+                        class="header__form"
+                        action="https://echo.htmlacademy.ru"
+                        method="GET"
                     >
-                        <use
-                            xlink:href="img/sprite.svg#icon-magnifyer"
-                        ></use>
-                    </svg>
-                    <input
-                        type="text"
-                        class="text"
-                        id="search"
-                        placeholder="Type here to search"
-                    />
-                    <label class="visually-hidden" for="search"
-                        >Search</label
-                    >
-                </form>
+                        <svg
+                            width="14"
+                            height="14"
+                            role="img"
+                            aria-label="search"
+                        >
+                            <use
+                                xlink:href="img/sprite.svg#icon-magnifyer"
+                            ></use>
+                        </svg>
+                        <input
+                            type="text"
+                            class="text"
+                            id="search"
+                            placeholder="Type here to search"
+                        />
+                        <label class="visually-hidden" for="search"
+                            >Search</label
+                        >
+                    </form>
                     <a href="index.html" class="header__logo">
                         <svg
                             width="66"
@@ -96,7 +96,9 @@
                         </svg>
                     </a>
                     <div class="header__user">
-                        <a href="login.html" class="header__login js-login">Login</a>
+                        <a href="login.html" class="header__login js-login"
+                            >Login</a
+                        >
                         <a href="#" class="header__cart">
                             <svg
                                 width="18"
@@ -108,7 +110,7 @@
                                     xlink:href="img/sprite.svg#icon-cart"
                                 ></use>
                             </svg>
-                            <span>Cart&nbsp</span
+                            <span>Cart&nbsp;</span
                             ><span class="header__counter">0</span></a
                         >
                     </div>
@@ -186,150 +188,153 @@
                     <h2 class="visually-hidden">Items choise</h2>
                     <button class="catalog__button">Filter</button>
                     <div class="catalog__filter-wrap">
-                    <form class="catalog__filter filter" action="https://echo.htmlacademy.ru" method="POST">
-                        <button
-                            class="filter__close"
-                            type="button"
-                            aria-label="close"
+                        <form
+                            class="catalog__filter filter"
+                            action="https://echo.htmlacademy.ru"
+                            method="POST"
                         >
-                            Close
-                        </button>
-                        <fieldset>
-                            <legend>Products</legend>
-                            <ul class="filter__group">
-                                <li class="filter__item">
-                                    <input
-                                        type="checkbox"
-                                        name="product"
-                                        id="Necklaces"
-                                        value="Necklaces"
-                                        checked
-                                    />
-                                    <label for="Necklaces">Necklaces</label>
-                                </li>
-                                <li class="filter__item">
-                                    <input
-                                        type="checkbox"
-                                        name="product"
-                                        id="Chokers"
-                                        value="Chokers"
-                                        checked
-                                    />
-                                    <label for="Chokers">Chokers</label>
-                                </li>
-                                <li class="filter__item">
-                                    <input
-                                        type="checkbox"
-                                        name="product"
-                                        id="Rings"
-                                        value="Rings"
-                                    />
-                                    <label for="Rings">Rings</label>
-                                </li>
-                                <li class="filter__item">
-                                    <input
-                                        type="checkbox"
-                                        name="product"
-                                        id="Earrings"
-                                        value="Earrings"
-                                        checked
-                                    />
-                                    <label for="Earrings">Earrings</label>
-                                </li>
-                            </ul>
-                        </fieldset>
-                        <fieldset>
-                            <legend>Material</legend>
-                            <ul class="filter__group">
-                                <li class="filter__item">
-                                    <input
-                                        type="checkbox"
-                                        name="material"
-                                        id="gold"
-                                        value="gold"
-                                    />
-                                    <label for="gold">Gold</label>
-                                </li>
-                                <li class="filter__item">
-                                    <input
-                                        type="checkbox"
-                                        name="material"
-                                        id="silver"
-                                        value="silver"
-                                    />
-                                    <label for="silver">Silver</label>
-                                </li>
-                            </ul>
-                        </fieldset>
-                        <fieldset>
-                            <legend>Collection</legend>
-                            <ul class="filter__group">
-                                <li class="filter__item">
-                                    <input
-                                        type="checkbox"
-                                        name="collection"
-                                        id="pink"
-                                        value="pink"
-                                    />
-                                    <label for="pink">Pink Flamingo</label>
-                                </li>
-                                <li class="filter__item">
-                                    <input
-                                        type="checkbox"
-                                        name="collection"
-                                        id="dreams"
-                                        value="dreams"
-                                    />
-                                    <label for="dreams">Dreams</label>
-                                </li>
-                            </ul>
-                        </fieldset>
-                        <fieldset>
-                            <legend>Price</legend>
-                            <div class="filter__range-wrapper">
-                                <div class="filter__range" id="range-box">
-                                    <div
-                                        class="filter__range-between"
-                                        id="range-ruler"
-                                    ></div>
+                            <button
+                                class="filter__close"
+                                type="button"
+                                aria-label="close"
+                            >
+                                Close
+                            </button>
+                            <fieldset>
+                                <legend>Products</legend>
+                                <ul class="filter__group">
+                                    <li class="filter__item">
+                                        <input
+                                            type="checkbox"
+                                            name="product"
+                                            id="Necklaces"
+                                            value="Necklaces"
+                                            checked
+                                        />
+                                        <label for="Necklaces">Necklaces</label>
+                                    </li>
+                                    <li class="filter__item">
+                                        <input
+                                            type="checkbox"
+                                            name="product"
+                                            id="Chokers"
+                                            value="Chokers"
+                                            checked
+                                        />
+                                        <label for="Chokers">Chokers</label>
+                                    </li>
+                                    <li class="filter__item">
+                                        <input
+                                            type="checkbox"
+                                            name="product"
+                                            id="Rings"
+                                            value="Rings"
+                                        />
+                                        <label for="Rings">Rings</label>
+                                    </li>
+                                    <li class="filter__item">
+                                        <input
+                                            type="checkbox"
+                                            name="product"
+                                            id="Earrings"
+                                            value="Earrings"
+                                            checked
+                                        />
+                                        <label for="Earrings">Earrings</label>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Material</legend>
+                                <ul class="filter__group">
+                                    <li class="filter__item">
+                                        <input
+                                            type="checkbox"
+                                            name="material"
+                                            id="gold"
+                                            value="gold"
+                                        />
+                                        <label for="gold">Gold</label>
+                                    </li>
+                                    <li class="filter__item">
+                                        <input
+                                            type="checkbox"
+                                            name="material"
+                                            id="silver"
+                                            value="silver"
+                                        />
+                                        <label for="silver">Silver</label>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Collection</legend>
+                                <ul class="filter__group">
+                                    <li class="filter__item">
+                                        <input
+                                            type="checkbox"
+                                            name="collection"
+                                            id="pink"
+                                            value="pink"
+                                        />
+                                        <label for="pink">Pink Flamingo</label>
+                                    </li>
+                                    <li class="filter__item">
+                                        <input
+                                            type="checkbox"
+                                            name="collection"
+                                            id="dreams"
+                                            value="dreams"
+                                        />
+                                        <label for="dreams">Dreams</label>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Price</legend>
+                                <div class="filter__range-wrapper">
+                                    <div class="filter__range" id="range-box">
+                                        <div
+                                            class="filter__range-between"
+                                            id="range-ruler"
+                                        ></div>
                                         <button
                                             class="filter__range-button-1"
                                             type="button"
                                             id="range-left-button"
                                         ></button>
                                         <button
-                                        class="filter__range-button-2"
-                                        type="button"
-                                        id="range-right-button"
-                                    >
-                                </button>
-                                <div class="filter__range-num">
-                                        <span>$&nbsp</span>
-                                        <input
-                                            type="number"
-                                            id="range-left-cell"
-                                            min="0"
-                                            max="200"
-                                            readonly
-                                        />
-                                        <span>$&nbsp</span
-                                        ><input
-                                            type="number"
-                                            id="range-right-cell"
-                                            min="0"
-                                            max="200"
-                                            readonly
-                                        />
-
+                                            class="filter__range-button-2"
+                                            type="button"
+                                            id="range-right-button"
+                                        ></button>
+                                        <div class="filter__range-num">
+                                            <span>$&nbsp;</span>
+                                            <input
+                                                type="number"
+                                                id="range-left-cell"
+                                                min="0"
+                                                max="200"
+                                                readonly
+                                            />
+                                            <span>$&nbsp;</span
+                                            ><input
+                                                type="number"
+                                                id="range-right-cell"
+                                                min="0"
+                                                max="200"
+                                                readonly
+                                            />
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-
-                        </fieldset>
-                        <button type="submit">Apply</button>
-                        <button type="reset">Clear All</button>
-                    </form></div>
+                            </fieldset>
+                            <button type="submit">Apply</button>
+                            <button type="reset">Clear All</button>
+                        </form>
+                    </div>
                     <ul class="catalog__list">
-                        <li class="new__card card ">
+                        <li class="new__card card">
                             <a class="card__link" href="card.html"
                                 ><div class="card__img-wrap">
                                     <picture>
@@ -357,7 +362,7 @@
                                 <p>$ 115</p></a
                             >
                         </li>
-                        <li class="new__card card ">
+                        <li class="new__card card">
                             <a class="card__link" href="card.html"
                                 ><div class="card__img-wrap">
                                     <picture>
@@ -385,7 +390,7 @@
                                 <p>$ 55</p></a
                             >
                         </li>
-                        <li class="new__card card ">
+                        <li class="new__card card">
                             <a class="card__link" href="card.html"
                                 ><div class="card__img-wrap">
                                     <picture>
@@ -413,7 +418,7 @@
                                 <p>$ 155</p></a
                             >
                         </li>
-                        <li class="new__card card ">
+                        <li class="new__card card">
                             <a class="card__link" href="card.html"
                                 ><div class="card__img-wrap">
                                     <picture>
@@ -441,7 +446,7 @@
                                 <p>$ 105</p></a
                             >
                         </li>
-                        <li class="new__card card ">
+                        <li class="new__card card">
                             <a class="card__link" href="card.html"
                                 ><div class="card__img-wrap">
                                     <picture>
@@ -469,7 +474,7 @@
                                 <p>$ 75</p></a
                             >
                         </li>
-                        <li class="new__card card ">
+                        <li class="new__card card">
                             <a class="card__link" href="card.html"
                                 ><div class="card__img-wrap">
                                     <picture>
@@ -497,7 +502,7 @@
                                 <p>$ 135</p></a
                             >
                         </li>
-                        <li class="new__card card ">
+                        <li class="new__card card">
                             <a class="card__link" href="card.html"
                                 ><div class="card__img-wrap">
                                     <picture>
@@ -526,7 +531,7 @@
                             >
                         </li>
 
-                        <li class="new__card card ">
+                        <li class="new__card card">
                             <a class="card__link" href="card.html">
                                 <div class="card__img-wrap">
                                     <picture>
@@ -554,7 +559,7 @@
                                 <p>$ 145</p></a
                             >
                         </li>
-                        <li class="new__card card ">
+                        <li class="new__card card">
                             <a class="card__link" href="card.html"
                                 ><div class="card__img-wrap">
                                     <picture>
@@ -582,7 +587,7 @@
                                 <p>$ 95</p></a
                             >
                         </li>
-                        <li class="new__card card ">
+                        <li class="new__card card">
                             <a class="card__link" href="card.html"
                                 ><div class="card__img-wrap">
                                     <picture>
@@ -611,7 +616,7 @@
                             >
                         </li>
 
-                        <li class="new__card card ">
+                        <li class="new__card card">
                             <a class="card__link" href="card.html"
                                 ><div class="card__img-wrap">
                                     <picture>
@@ -639,7 +644,7 @@
                                 <p>$ 105</p></a
                             >
                         </li>
-                        <li class="new__card card ">
+                        <li class="new__card card">
                             <a class="card__link" href="card.html"
                                 ><div class="card__img-wrap">
                                     <picture>
@@ -671,7 +676,9 @@
                     <div class="catalog__controls">
                         <button type="button">Previous</button>
                         <ol class="catalog__pages">
-                            <li class="catalog__page catalog__page--active">1</li>
+                            <li class="catalog__page catalog__page--active">
+                                1
+                            </li>
                             <li class="catalog__page">2</li>
                             <li class="catalog__page">3</li>
                             <li class="catalog__page">4</li>
