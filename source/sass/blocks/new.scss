@@ -1,5 +1,5 @@
 .new {
-    margin-bottom: 165px;
+    margin-bottom: 176px;
 }
 
 .new__container {
@@ -7,10 +7,15 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+
+    & h2 {
+        letter-spacing: normal;
+        margin-bottom: 22px;
+    }
 }
 
 .new__page-link {
-    margin-bottom: 60px;
+    margin-bottom: 64px;
 }
 
 .new__slider {
@@ -32,7 +37,7 @@
 
 @media (max-width: $desktop) {
     .new {
-        margin-bottom: 116px;
+        margin-bottom: 124px;
     }
 
     .new__page-link {
@@ -46,7 +51,11 @@
 
 @media (max-width: $tablet) {
     .new {
-        margin-bottom: 106px;
+        margin-bottom: 116px;
+    }
+
+    .new__container h2 {
+        margin-bottom: 18px;
     }
 
     .new__page-link {

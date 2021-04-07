@@ -38,9 +38,13 @@
         gap: 14px;
     }
 
+    .tabs__prewiev-wrap img {
+        height: 129px;
+    }
+
     .tabs__content {
         flex-basis: 319px;
-        height: 286px;
+        max-height: 286px;
     }
 }
 
@@ -55,11 +59,15 @@
         display: none;
     }
 
+    .tabs__content {
+        max-height: 260px;
+    }
+
     .tabs__count {
         @include font(1.4rem, 130%, 500);
         display: block;
         position: absolute;
-        bottom: 10px;
+        bottom: 6px;
         left: 50%;
         transform: translateX(-50%);
     }

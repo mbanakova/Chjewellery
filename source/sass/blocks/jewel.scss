@@ -1,28 +1,31 @@
 .jewel {
-    margin-top: 55px;
+    margin-top: 63px;
+    margin-bottom: 120px;
 }
 
 .jewel__container {
     display: grid;
-    grid-template-columns: minmax(400px, 600px) minmax(300px, 400px);
+    grid-template-columns: minmax(400px, 600px) minmax(300px, 370px);
     grid-column-gap: 100px;
 }
 
 .jewel__description {
+    margin-top: -3px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 
     & h2 {
         text-align: left;
         line-height: 100%;
-        margin-bottom: 0;
+        margin-bottom: 18px;
+        letter-spacing: 0;
     }
 
     & p {
         @include font(2.6rem, 100%, 400);
         @include fields();
         text-align: left;
+        margin-bottom: 43px;
     }
 }
 
@@ -33,11 +36,12 @@
 
 .jewel__info {
     position: relative;
+
     & label {
         color: $grey;
         text-align: left;
         padding: 20px 0;
-        margin-right: 30px;
+        margin-right: 40px;
         margin-left: -8px;
     }
 
@@ -65,13 +69,14 @@
     & p {
         @include fields();
         @include font(1.6rem, 160%, 400);
-        padding-top: 20px;
+        margin-top: 30px;
         min-height: 147px;
     }
 }
 
 .jewel__info-block {
     display: none;
+    margin-top: 20px;
 }
 
 .jewel__tr {
@@ -80,7 +85,7 @@
 
 .jewel__td {
     @include font(1.4rem, 130%, 500);
-    padding: 15px 0;
+    padding: 11px 0;
 
     &--right {
         font-weight: 400;
@@ -90,7 +95,8 @@
 
 .jewel__add-link {
     @include font(1.6rem, 130%, 500);
-    padding: 28px;
+    padding: 24px;
+    margin-top: auto;
     border: none;
     font-family: $poppins;
     display: block;
@@ -104,6 +110,7 @@
 .jewel__features-list {
     @include ul();
     @include font(1.4rem, 130%, 500);
+    margin-top: 20px;
     display: flex;
     font-weight: 500;
     justify-content: space-between;
@@ -113,24 +120,59 @@
 }
 
 @media (max-width: $desktop) {
+    .jewel {
+        margin-top: 30px;
+        margin-bottom: 70px;
+    }
+
     .jewel__container {
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 40px;
     }
+
+    .jewel__features-list {
+        @include font(1.2rem, 130%, 500);
+        margin-top: 18px;
+    }
 }
 
 @media (max-width: $tablet) {
+    .jewel {
+        margin-top: 0;
+        margin-bottom: 58px;
+    }
+
     .jewel__container {
         grid-template-columns: 1fr;
-        grid-row-gap: 50px;
+        grid-row-gap: 48px;
     }
 
     .jewel__description {
         justify-content: flex-start;
-        gap: 20px;
+
+        & h2 {
+            margin-bottom: 21px;
+        }
+
+        & p {
+            margin-bottom: 32px;
+        }
     }
 
     .jewel__features-list {
         text-align: center;
+        margin-top: 12px;
+    }
+
+    .jewel__info {
+        position: relative;
+
+        & label {
+            margin-right: 42px;
+        }
+    }
+
+    .jewel__add-link {
+        margin-top: 38px;
     }
 }
