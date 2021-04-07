@@ -20,6 +20,16 @@
     &:not(:last-of-type) {
         border-bottom: none;
     }
+
+    &:hover {
+        background-color: rgba($accent, 0.1);
+        transition: 0.2 ease-in;
+    }
+
+    &:active {
+        background-color: rgba($grey, 0.2);
+        transition: 0.2 ease-in;
+    }
 }
 
 .faq__item h3 {

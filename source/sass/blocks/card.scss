@@ -1,5 +1,20 @@
 .card {
     text-align: center;
+
+    &:hover {
+        color: $accent;
+        transition: 0.2 ease-in;
+
+        & img {
+            border: 1px solid $accent;
+            transition: 0.2 ease-in;
+        }
+    }
+
+    &:active {
+        color: $grey;
+        transition: 0.2 ease-in;
+    }
 }
 
 .card__link {

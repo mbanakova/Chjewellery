@@ -46,6 +46,16 @@
         border: none;
         background-color: transparent;
         padding: 0;
+
+        &:hover {
+            color: $accent;
+            transition: 0.2 ease-in;
+        }
+
+        &:active {
+            background-color: $brown;
+            transition: 0.2 ease-in;
+        }
     }
 }
 

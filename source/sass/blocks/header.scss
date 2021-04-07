@@ -99,6 +99,16 @@
         display: none;
         text-align-last: left;
     }
+
+    &:hover {
+        color: $accent;
+        transition: 0.2 ease-in;
+    }
+
+    &:active {
+        color: $grey;
+        transition: 0.2 ease-in;
+    }
 }
 
 .header__cart {
@@ -107,6 +117,16 @@
     display: block;
     padding: 6px 0 6px 8px;
     position: relative;
+
+    &:hover {
+        color: $accent;
+        transition: 0.2 ease-in;
+    }
+
+    &:active {
+        color: $grey;
+        transition: 0.2 ease-in;
+    }
 
     & span:first-of-type {
         margin-right: 6px;
@@ -181,6 +201,10 @@
     .header__bottom {
         position: absolute;
         top: 160px;
+
+        &--card::after {
+            display: none;
+        }
     }
 
     .header__burger {
@@ -247,6 +271,17 @@
         &--mobile {
             @include font(1.8rem, 23.4px, 500);
             display: block;
+
+            &:hover {
+                color: $white;
+                text-decoration: underline;
+                transition: 0.2 ease-in;
+            }
+
+            &:active {
+                color: $grey;
+                transition: 0.2 ease-in;
+            }
         }
     }
 

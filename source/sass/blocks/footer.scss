@@ -38,6 +38,16 @@
 .footer__nav-link {
     @include a();
     text-align: left;
+
+    &:hover {
+        color: $accent;
+        transition: 0.2 ease-in;
+    }
+
+    &:active {
+        color: $grey;
+        transition: 0.2 ease-in;
+    }
 }
 
 .footer__social {

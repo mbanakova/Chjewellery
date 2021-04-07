@@ -41,6 +41,10 @@
     }
 }
 
+.gallery__img {
+    @include blink();
+}
+
 .gallery__img--large {
     flex-grow: 1;
 

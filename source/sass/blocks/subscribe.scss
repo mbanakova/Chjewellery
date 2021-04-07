@@ -47,6 +47,15 @@
         display: inline-block;
         margin-left: 12px;
     }
+
+    &:hover {
+        outline: 1px solid $accent;
+    }
+
+    &:active {
+        color: $grey;
+        transition: 0.2 ease-in;
+    }
 }
 
 .subscribe label {

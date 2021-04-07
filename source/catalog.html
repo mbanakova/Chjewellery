@@ -96,7 +96,7 @@
                         </svg>
                     </a>
                     <div class="header__user">
-                        <a href="#" class="header__login js-login">Login</a>
+                        <a href="login.html" class="header__login js-login">Login</a>
                         <a href="#" class="header__cart">
                             <svg
                                 width="18"
@@ -142,7 +142,7 @@
                                 >
                             </li>
                         </ul>
-                        <ul class="nav__list--mobile nav">
+                        <ul class="nav__list nav__list--mobile nav">
                             <li class="nav__item nav__item--mobile">
                                 <a href="#" class="nav__link nav__link--mobile"
                                     >About CH</a
@@ -161,7 +161,7 @@
                         </ul>
                     </nav>
                     <a
-                        href="#"
+                        href="login.html"
                         class="header__login header__login--mobile js-login"
                         >Login</a
                     >
@@ -186,7 +186,7 @@
                     <h2 class="visually-hidden">Items choise</h2>
                     <button class="catalog__button">Filter</button>
                     <div class="catalog__filter-wrap">
-                    <form class="catalog__filter filter">
+                    <form class="catalog__filter filter" action="https://echo.htmlacademy.ru" method="POST">
                         <button
                             class="filter__close"
                             type="button"
@@ -202,6 +202,8 @@
                                         type="checkbox"
                                         name="product"
                                         id="Necklaces"
+                                        value="Necklaces"
+                                        checked
                                     />
                                     <label for="Necklaces">Necklaces</label>
                                 </li>
@@ -210,6 +212,8 @@
                                         type="checkbox"
                                         name="product"
                                         id="Chokers"
+                                        value="Chokers"
+                                        checked
                                     />
                                     <label for="Chokers">Chokers</label>
                                 </li>
@@ -218,6 +222,7 @@
                                         type="checkbox"
                                         name="product"
                                         id="Rings"
+                                        value="Rings"
                                     />
                                     <label for="Rings">Rings</label>
                                 </li>
@@ -226,6 +231,8 @@
                                         type="checkbox"
                                         name="product"
                                         id="Earrings"
+                                        value="Earrings"
+                                        checked
                                     />
                                     <label for="Earrings">Earrings</label>
                                 </li>
@@ -239,6 +246,7 @@
                                         type="checkbox"
                                         name="material"
                                         id="gold"
+                                        value="gold"
                                     />
                                     <label for="gold">Gold</label>
                                 </li>
@@ -247,6 +255,7 @@
                                         type="checkbox"
                                         name="material"
                                         id="silver"
+                                        value="silver"
                                     />
                                     <label for="silver">Silver</label>
                                 </li>
@@ -260,6 +269,7 @@
                                         type="checkbox"
                                         name="collection"
                                         id="pink"
+                                        value="pink"
                                     />
                                     <label for="pink">Pink Flamingo</label>
                                 </li>
@@ -268,6 +278,7 @@
                                         type="checkbox"
                                         name="collection"
                                         id="dreams"
+                                        value="dreams"
                                     />
                                     <label for="dreams">Dreams</label>
                                 </li>
@@ -871,7 +882,8 @@
                 </div>
             </div>
         </section>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script src="js/range.js"></script>
-        <script src="js/catalog.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>

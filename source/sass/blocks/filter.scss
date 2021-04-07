@@ -92,6 +92,16 @@
         left: 0;
         border: 1px solid $accent;
     }
+
+    &:hover {
+        color: $accent;
+        transition: 0.2 ease-in;
+    }
+
+    &:active {
+        color: $grey;
+        transition: 0.2 ease-in;
+    }
 }
 
 .filter__range {
@@ -157,12 +167,33 @@
     text-align: center;
     background-color: $accent;
     color: $white;
+
+    &:hover {
+        background-color: $brown;
+        transition: 0.2 ease-in;
+    }
+
+    &:active {
+        background-color: rgba($accent, 0.7);
+        transition: 0.2 ease-in;
+    }
 }
 
 .filter button[type="reset"] {
     background-color: $white;
     color: $accent;
     border: 1px solid $accent;
+
+    &:hover {
+        background-color: $brown;
+        color: white;
+        transition: 0.2 ease-in;
+    }
+
+    &:active {
+        background-color: rgba($accent, 0.7);
+        transition: 0.2 ease-in;
+    }
 }
 
 @media (max-width: $desktop) {

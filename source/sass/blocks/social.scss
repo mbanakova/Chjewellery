@@ -11,6 +11,16 @@
     & svg {
         margin-right: 15px;
     }
+
+    &:hover {
+        color: $accent;
+        transition: 0.2 ease-in;
+    }
+
+    &:active {
+        color: $grey;
+        transition: 0.2 ease-in;
+    }
 }
 
 @media (max-width: $desktop) {

@@ -26,6 +26,16 @@
     &::after {
         content: "";
     }
+
+    &:hover {
+        outline: 1px solid $accent;
+        transition: 0.2 ease-in;
+    }
+
+    &:active {
+        background-color: $grey;
+        transition: 0.2 ease-in;
+    }
 }
 
 .swiper-button-prev {

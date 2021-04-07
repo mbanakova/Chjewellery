@@ -88,6 +88,17 @@
         text-decoration: none;
         text-transform: capitalize;
         width: 100%;
+
+        &:hover {
+            background-color: $brown;
+            color: white;
+            transition: 0.2 ease-in;
+        }
+
+        &:active {
+            background-color: rgba($accent, 0.7);
+            transition: 0.2 ease-in;
+        }
     }
 }
 
@@ -130,11 +141,6 @@
         @include font(1rem, 130%, 500);
         transform: translateY(-200%);
     }
-
-    // & input:focus + label::after,
-    // & input:valid + label::after {
-    //     transform: translateX(0%);
-    // }
 }
 
 .login__remind {
@@ -144,6 +150,16 @@
     text-decoration: none;
     text-align: right;
     margin-bottom: 40px;
+
+    &:hover {
+        color: $accent;
+        transition: 0.2 ease-in;
+    }
+
+    &:active {
+        color: $grey;
+        transition: 0.2 ease-in;
+    }
 }
 
 .login__bottom {
@@ -165,6 +181,16 @@
     text-decoration: none;
     color: inherit;
     text-align: center;
+
+    &:hover {
+        color: $accent;
+        transition: 0.2 ease-in;
+    }
+
+    &:active {
+        color: $grey;
+        transition: 0.2 ease-in;
+    }
 }
 
 @media (max-width: $desktop) {
