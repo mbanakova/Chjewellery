@@ -32,8 +32,201 @@
     flex-direction: column;
     position: relative;
     background-color: $beige;
+}
 
-    & button[type="button"] {
+.login__container button[type="button"] {
+    // кнопка "закрыть"
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+
+    &::before,
+    &::after {
+        position: absolute;
+        content: "";
+        width: 20px;
+        height: 2px;
+        background-color: $dark;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%) rotate(45deg);
+    }
+
+    &::after {
+        transform: translate(-50%) rotate(135deg);
+    }
+}
+
+.login__container h2 {
+    @include font(3.4rem, 130%, 700);
+    @include fields();
+    margin-bottom: 20px;
+    font-family: $cormorant;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.login__form {
+    padding: 60px 45px;
+}
+
+.login__form button[type="submit"] {
+    @include font(1.6rem, 130%, 500);
+    padding: 28px 30px;
+    margin-bottom: 20px;
+    border: none;
+    font-family: $poppins;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    background-color: $accent;
+    color: $white;
+    text-decoration: none;
+    text-transform: capitalize;
+    width: 100%;
+
+    &:hover {
+        background-color: $brown;
+        color: white;
+        transition: 0.2 ease-in;
+    }
+
+    &:active {
+        background-color: rgba($accent, 0.7);
+        transition: 0.2 ease-in;
+    }
+}
+
+.login__input {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.login__input input {
+    @include font(1.4rem, 130%, 500);
+    padding: 15px 0;
+    width: 100%;
+    height: 100%;
+    font-family: $poppins;
+    border: 0;
+    outline: 0;
+    color: $grey;
+    background-color: transparent;
+
+    &::placeholder {
+        color: $grey;
+    }
+}
+
+.login__input label {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid $dark;
+}
+
+.login__remind {
+    @include font(1.2rem, 130%, 500);
+    color: $grey;
+    display: block;
+    text-decoration: none;
+    text-align: right;
+    margin-bottom: 40px;
+
+    &:hover {
+        color: $accent;
+        transition: 0.2 ease-in;
+    }
+
+    &:active {
+        color: $grey;
+        transition: 0.2 ease-in;
+    }
+}
+
+.login__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.login__bottom p {
+    @include fields();
+    @include font(1.4rem, 130%, 500);
+    color: $grey;
+}
+
+.login__sign-up {
+    @include font(1.4rem, 130%, 500);
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+
+    &:hover {
+        color: $accent;
+        transition: 0.2 ease-in;
+    }
+
+    &:active {
+        color: $grey;
+        transition: 0.2 ease-in;
+    }
+}
+
+@media (max-width: $desktop) {
+    .login__container {
+        width: 442px;
+    }
+
+    .login__container button[type="button"] {
+        // кнопка "закрыть"
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 10px;
+        right: 10px;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+
+        &::before,
+        &::after {
+            position: absolute;
+            content: "";
+            width: 28px;
+            height: 2px;
+            background-color: $dark;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%) rotate(45deg);
+        }
+
+        &::after {
+            transform: translate(-50%) rotate(135deg);
+        }
+    }
+
+    .login__form {
+        padding: 60px 51px;
+    }
+}
+
+@media (max-width: $tablet) {
+    .login__container {
+        width: 270px;
+    }
+
+    .login__container button[type="button"] {
         // кнопка "закрыть"
         position: absolute;
         width: 20px;
@@ -61,211 +254,8 @@
         }
     }
 
-    & h2 {
-        @include font(3.4rem, 130%, 700);
-        @include fields();
-        margin-bottom: 20px;
-        font-family: $cormorant;
-        text-align: center;
-        text-transform: capitalize;
-    }
-}
-
-.login__form {
-    padding: 60px 45px;
-
-    & button[type="submit"] {
-        @include font(1.6rem, 130%, 500);
-        padding: 28px 30px;
-        margin-bottom: 20px;
-        border: none;
-        font-family: $poppins;
-        display: block;
-        cursor: pointer;
-        text-align: center;
-        background-color: $accent;
-        color: $white;
-        text-decoration: none;
-        text-transform: capitalize;
-        width: 100%;
-
-        &:hover {
-            background-color: $brown;
-            color: white;
-            transition: 0.2 ease-in;
-        }
-
-        &:active {
-            background-color: rgba($accent, 0.7);
-            transition: 0.2 ease-in;
-        }
-    }
-}
-
-.login__input {
-    position: relative;
-    margin-bottom: 10px;
-
-    & input {
-        @include font(1.4rem, 130%, 500);
-        padding: 15px 0;
-        width: 100%;
-        height: 100%;
-        font-family: $poppins;
-        border: 0;
-        outline: 0;
-        color: $grey;
-        background-color: transparent;
-    }
-
-    & label {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-        border-bottom: 1px solid $dark;
-    }
-
-    & span {
-        @include font(1.4rem, 130%, 500);
-        position: absolute;
-        left: 0;
-        bottom: 15px;
-        color: $grey;
-    }
-
-    & input:focus + label span,
-    & input:valid + label span {
-        @include font(1rem, 130%, 500);
-        transform: translateY(-200%);
-    }
-}
-
-.login__remind {
-    @include font(1.2rem, 130%, 500);
-    color: $grey;
-    display: block;
-    text-decoration: none;
-    text-align: right;
-    margin-bottom: 40px;
-
-    &:hover {
-        color: $accent;
-        transition: 0.2 ease-in;
-    }
-
-    &:active {
-        color: $grey;
-        transition: 0.2 ease-in;
-    }
-}
-
-.login__bottom {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    gap: 5px;
-
-    & p {
-        @include fields();
-        @include font(1.4rem, 130%, 500);
-        color: $grey;
-    }
-}
-
-.login__sign-up {
-    @include font(1.4rem, 130%, 500);
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    text-align: center;
-
-    &:hover {
-        color: $accent;
-        transition: 0.2 ease-in;
-    }
-
-    &:active {
-        color: $grey;
-        transition: 0.2 ease-in;
-    }
-}
-
-@media (max-width: $desktop) {
-    .login__container {
-        width: 442px;
-
-        & button[type="button"] {
-            // кнопка "закрыть"
-            position: absolute;
-            width: 30px;
-            height: 30px;
-            top: 10px;
-            right: 10px;
-            background-color: transparent;
-            border: none;
-            padding: 0;
-
-            &::before,
-            &::after {
-                position: absolute;
-                content: "";
-                width: 28px;
-                height: 2px;
-                background-color: $dark;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%) rotate(45deg);
-            }
-
-            &::after {
-                transform: translate(-50%) rotate(135deg);
-            }
-        }
-    }
-
-    .login__form {
-        padding: 60px 51px;
-    }
-}
-
-@media (max-width: $tablet) {
-    .login__container {
-        width: 270px;
-
-        & button[type="button"] {
-            // кнопка "закрыть"
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            top: 10px;
-            right: 10px;
-            background-color: transparent;
-            border: none;
-            padding: 0;
-
-            &::before,
-            &::after {
-                position: absolute;
-                content: "";
-                width: 20px;
-                height: 2px;
-                background-color: $dark;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%) rotate(45deg);
-            }
-
-            &::after {
-                transform: translate(-50%) rotate(135deg);
-            }
-        }
-
-        & h2 {
-            @include font(2.4rem, 130%, 700);
-        }
+    .login__container h2 {
+        @include font(2.4rem, 130%, 700);
     }
 
     .login__form {

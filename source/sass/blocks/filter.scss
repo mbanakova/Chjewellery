@@ -28,32 +28,32 @@
         margin-bottom: 35px;
         min-height: 150px;
     }
+}
 
-    & legend {
+.filter legend {
+    position: absolute;
+    width: 82%;
+    top: 24px;
+    left: 20px;
+
+    &::after {
         position: absolute;
-        width: 82%;
-        top: 24px;
-        left: 20px;
-
-        &::after {
-            position: absolute;
-            content: "";
-            top: 2px;
-            right: 0;
-            transform: rotate(-45deg);
-            width: 11px;
-            height: 11px;
-            border-bottom: 2px solid $accent;
-            border-left: 2px solid $accent;
-            transition: 0.1s ease;
-        }
-
-        &.active::after {
-            border: none;
-            border-top: 2px solid $accent;
-            border-right: 2px solid $accent;
-        }
+        content: "";
+        top: 2px;
+        right: 0;
+        transform: rotate(-45deg);
+        width: 11px;
+        height: 11px;
+        border-bottom: 2px solid $accent;
+        border-left: 2px solid $accent;
+        transition: 0.1s ease;
     }
+}
+
+.filter legend.active::after {
+    border: none;
+    border-top: 2px solid $accent;
+    border-right: 2px solid $accent;
 }
 
 .filter__group {
@@ -131,6 +131,14 @@
     cursor: pointer;
 }
 
+.filter__range-button-1 {
+    left: 20%;
+}
+
+.filter__range-button-2 {
+    right: 20%;
+}
+
 .filter__range {
     position: relative;
 }
@@ -140,19 +148,19 @@
     justify-content: space-between;
     width: 140px;
     margin: 0 auto;
+}
 
-    & span {
-        @include font(14px, 18px, 500);
-        font-family: $poppins;
-        color: $dark;
-    }
+.filter__range-num span {
+    @include font(14px, 18px, 500);
+    font-family: $poppins;
+    color: $dark;
+}
 
-    & input {
-        @include font(14px, 18px, 500);
-        font-family: $poppins;
-        color: $dark;
-        border: none;
-    }
+.filter__range-num input {
+    @include font(14px, 18px, 500);
+    font-family: $poppins;
+    color: $dark;
+    border: none;
 }
 
 .filter button[type="submit"],

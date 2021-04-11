@@ -3,13 +3,13 @@
 
     &--open {
         display: block;
-
-        & .add__overlay {
-            opacity: 1;
-            z-index: 999;
-            background-color: rgba($dark, 0.25);
-        }
     }
+}
+
+.add--open .add__overlay {
+    opacity: 1;
+    z-index: 999;
+    background-color: rgba($dark, 0.25);
 }
 
 .add__overlay {
@@ -33,40 +33,40 @@
     flex-direction: column;
     position: relative;
     background-color: $white;
+}
 
-    & button[type="button"] {
+.add__container h2 {
+    @include font(2.6rem, 130%, 700);
+    @include fields();
+    font-family: $cormorant;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.add__container button[type="button"] {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 12px;
+    right: 12px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+
+    &::before,
+    &::after {
         position: absolute;
+        content: "";
         width: 20px;
-        height: 20px;
-        top: 12px;
-        right: 12px;
-        background-color: transparent;
-        border: none;
-        padding: 0;
-
-        &::before,
-        &::after {
-            position: absolute;
-            content: "";
-            width: 20px;
-            height: 2px;
-            background-color: $dark;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%) rotate(45deg);
-        }
-
-        &::after {
-            transform: translate(-50%) rotate(135deg);
-        }
+        height: 2px;
+        background-color: $dark;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%) rotate(45deg);
     }
 
-    & h2 {
-        @include font(2.6rem, 130%, 700);
-        @include fields();
-        font-family: $cormorant;
-        text-align: center;
-        margin-bottom: 55px;
+    &::after {
+        transform: translate(-50%) rotate(135deg);
     }
 }
 
@@ -82,13 +82,13 @@
 .add__item-text {
     display: flex;
     flex-direction: column;
+}
 
-    & h3 {
-        @include font(1.8rem, 130%, 700);
-        @include fields();
-        font-family: $cormorant;
-        margin-bottom: 20px;
-    }
+.add__item-text h3 {
+    @include font(1.8rem, 130%, 700);
+    @include fields();
+    font-family: $cormorant;
+    margin-bottom: 20px;
 }
 
 .add__item-counter {
@@ -131,13 +131,14 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
+}
 
-    & p {
-        @include font(1.4rem, 130%, 400);
-        @include fields();
-        &:last-of-type {
-            font-weight: 500;
-        }
+.add__info p {
+    @include font(1.4rem, 130%, 400);
+    @include fields();
+
+    &:last-of-type {
+        font-weight: 500;
     }
 }
 

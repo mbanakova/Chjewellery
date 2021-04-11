@@ -127,15 +127,15 @@
         color: $grey;
         transition: 0.2 ease-in;
     }
+}
 
-    & span:first-of-type {
-        margin-right: 6px;
-    }
+.header__cart span:first-of-type {
+    margin-right: 6px;
+}
 
-    & svg {
-        fill: $white;
-        display: none;
-    }
+.header__cart svg {
+    fill: $white;
+    display: none;
 }
 
 @media (max-width: $desktop) {
@@ -149,10 +149,6 @@
             z-index: 100;
             background-color: $accent;
             color: $white;
-
-            & .header__burger {
-                display: block;
-            }
         }
 
         &--close {
@@ -160,35 +156,39 @@
             background-color: $accent;
             color: $white;
             height: 100vh;
-
-            &.header {
-                background-color: unset;
-                color: inherit;
-                height: 126px;
-                min-height: unset;
-            }
-
-            & .header__burger::before {
-                background-color: $black;
-                box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
-            }
-
-            & .header__form {
-                display: none;
-            }
-
-            & .header__bottom {
-                display: none;
-            }
-
-            .header__logo svg {
-                fill: $accent;
-                stroke: transparent;
-            }
         }
     }
 
-    .header__top {
+    .header--js .header__burger {
+        display: block;
+    }
+
+    .header--close.header {
+        background-color: unset;
+        color: inherit;
+        height: 126px;
+        min-height: unset;
+    }
+
+    .header--close .header__burger::before {
+        background-color: $black;
+        box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
+    }
+
+    .header--close .header__form {
+        display: none;
+    }
+
+    .header--close .header__bottom {
+        display: none;
+    }
+
+    .header--close .header__logo svg {
+        fill: $accent;
+        stroke: transparent;
+    }
+
+    .header--close .header--js .header__top {
         flex-wrap: wrap;
         align-items: center;
         padding-bottom: 0;
@@ -233,28 +233,28 @@
         width: 100%;
         top: 100px;
         position: absolute;
+    }
 
-        & svg {
-            position: absolute;
-            left: 10px;
-            width: 16px;
-            height: 16px;
-        }
+    .header__form svg {
+        position: absolute;
+        left: 10px;
+        width: 16px;
+        height: 16px;
+    }
 
-        & input {
-            background-color: rgba($white, 0.15);
-            border-radius: 21px;
-            width: 100%;
+    .header__form input {
+        background-color: rgba($white, 0.15);
+        border-radius: 21px;
+        width: 100%;
+        color: $white;
+
+        &::placeholder {
             color: $white;
-
-            &::placeholder {
-                color: $white;
-            }
         }
+    }
 
-        & span {
-            display: none;
-        }
+    .header__form span {
+        display: none;
     }
 
     .header__logo {
@@ -285,17 +285,15 @@
         }
     }
 
-    .header__cart {
-        & svg {
-            display: block;
-        }
-
-        & span:first-of-type {
-            display: none;
-        }
+    .header__cart svg {
+        display: block;
     }
 
-    .header__counter {
+    .header__cart span:first-of-type {
+        display: none;
+    }
+
+    .header__cart span:last-of-type {
         display: none;
         @include pseudo();
         top: -5px;

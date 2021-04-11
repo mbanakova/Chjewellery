@@ -56,9 +56,10 @@
         <title>Chjewellery</title>
     </head>
     <body class="body">
-        <section class="login--open">
+        <section class="login login--open">
             <div class="login__overlay">
                 <div class="login__container">
+                    <h1 class="visually-hidden">Log in form</h1>
                     <div class="login__img">
                         <picture>
                             <!-- 1х: 430px; 2x: 860px -->
@@ -93,10 +94,11 @@
                                 id="user-email"
                                 tabindex="1"
                                 required
+                                placeholder="Your E-mail"
                             />
-                            <label for="user-email" aria-label="Your E-mail"
-                                ><span>Your E-mail</span></label
-                            >
+                            <label for="user-email" aria-label="Your E-mail">
+                                <!-- <span>Your E-mail</span> -->
+                            </label>
                         </div>
                         <div class="login__input login__input--password">
                             <input
@@ -105,10 +107,12 @@
                                 id="user-password"
                                 tabindex="2"
                                 required
+                                placeholder="Password"
                             />
-                            <label for="user-password" aria-label="password"
-                                ><span>Password</span></label
-                            >
+                            <label
+                                for="user-password"
+                                aria-label="password"
+                            ></label>
                         </div>
                         <a class="login__remind" href="#"
                             >Forgot your password?</a
@@ -122,6 +126,6 @@
                 </div>
             </div>
         </section>
-        <script src="js/script.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>

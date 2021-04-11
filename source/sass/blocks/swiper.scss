@@ -57,6 +57,7 @@
     width: 14px;
     height: 20px;
     display: inline-block;
+    vertical-align: baseline;
     font-family: $poppins;
     color: $grey;
     background-color: transparent;
@@ -64,10 +65,10 @@
     border: 0;
     box-shadow: none;
     appearance: none;
+}
 
-    &-active {
-        color: $dark;
-    }
+.swiper-pagination-bullet-active {
+    color: $dark;
 }
 
 @media (max-width: $desktop) {
@@ -79,11 +80,12 @@
     .swiper-button-prev {
         top: 50px;
         width: 40px;
+    }
 
-        & svg {
-            width: 100%;
-            height: auto;
-        }
+    .swiper-button-next svg,
+    .swiper-button-prev svg {
+        width: 100%;
+        height: auto;
     }
 
     .swiper-button-prev {

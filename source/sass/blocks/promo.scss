@@ -73,11 +73,11 @@
 
         &--catalog {
             margin-bottom: 50px;
-
-            & .promo__container {
-                margin-left: 0;
-            }
         }
+    }
+
+    .promo--catalog .promo__container {
+        margin-left: 0;
     }
 
     .promo__container {
@@ -90,17 +90,18 @@
     .promo {
         background-image: url("../img/promo-mob.png");
         margin-bottom: 60px;
+
         &--catalog {
             margin-bottom: 40px;
-
-            & .promo__container {
-                margin-top: 0;
-            }
         }
 
         @media (min-resolution: $extra) {
             background-image: url("../img/promo-mob@2.png");
         }
+    }
+
+    .promo--catalog .promo__container {
+        margin-top: 0;
     }
 
     .promo__container {

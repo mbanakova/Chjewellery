@@ -4,7 +4,10 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Jewellery shop" />
-        <meta name="keywords" content="Jewellery, earrings, necklaces, rings, pendants, gold, silver." />
+        <meta
+            name="keywords"
+            content="Jewellery, earrings, necklaces, rings, pendants, gold, silver."
+        />
         <link
             rel="preload"
             href="fonts/poppins-regular.woff2"
@@ -84,7 +87,7 @@
                             >Search</label
                         >
                     </form>
-                    <a href="#" class="header__logo">
+                    <a href="index.html" class="header__logo">
                         <svg
                             width="66"
                             height="66"
@@ -143,7 +146,7 @@
                                 >
                             </li>
                         </ul>
-                        <ul class="nav__list nav__list--mobile nav">
+                        <ul class="nav__list nav__list--mobile">
                             <li class="nav__item nav__item--mobile">
                                 <a href="#" class="nav__link nav__link--mobile"
                                     >About CH</a
@@ -260,16 +263,28 @@
                             </li>
                         </ul>
                         <span class="tabs__count">1 of 4</span>
-                        <img
-                            class="tabs__content"
-                            src="img/tab2-large.png"
-                            srcset="
-                                img/tab2-large.png   470w,
-                                img/tab2-large@2.png 940w
-                            "
-                            sizes="(max-width: 1023px) 319px, 470px"
-                            alt="Таб 2"
-                        />
+                        <div class="tabs__content">
+                            <picture>
+                                <!-- 1х: 470px; 2x: 940px -->
+                                <source
+                                    type="image/webp"
+                                    srcset="
+                                        img/tab2-large.webp   1x,
+                                        img/tab2-large@2.webp 2x
+                                    "
+                                />
+                                <!-- 1х: 470px; 2x: 940px-->
+                                <img
+                                    src="img/tab2-large.png"
+                                    srcset="
+                                        img/tab2-large.png   470w,
+                                        img/tab2-large@2.png 940w
+                                    "
+                                    sizes="(max-width: 767px) 290px, (max-width: 1023px) 319px, 470px"
+                                    alt="Таб 2"
+                                />
+                            </picture>
+                        </div>
                     </div>
                     <div class="jewel__description">
                         <h2 class="section-title">Gold Necklace</h2>
@@ -282,7 +297,6 @@
                                 id="tab-2"
                                 checked
                             />
-
                             <label
                                 class="jewel__label jewel__label-1"
                                 for="tab-1"
@@ -886,10 +900,11 @@
                                 id="user-email"
                                 tabindex="1"
                                 required
+                                placeholder="Your E-mail"
                             />
-                            <label for="user-email" aria-label="Your E-mail"
-                                ><span>Your E-mail</span></label
-                            >
+                            <label for="user-email" aria-label="Your E-mail">
+                                <!-- <span>Your E-mail</span> -->
+                            </label>
                         </div>
                         <div class="login__input login__input--password">
                             <input
@@ -898,10 +913,12 @@
                                 id="user-password"
                                 tabindex="2"
                                 required
+                                placeholder="Password"
                             />
-                            <label for="user-password" aria-label="password"
-                                ><span>Password</span></label
-                            >
+                            <label
+                                for="user-password"
+                                aria-label="password"
+                            ></label>
                         </div>
                         <a class="login__remind" href="#"
                             >Forgot your password?</a
@@ -946,8 +963,7 @@
                         <div class="add__item-text">
                             <h3>Gold Necklace</h3>
                             <div class="add__price__wrap">
-                                <span class="add__dollar">$ </span
-                                ><span class="add__price">115</span>
+                                <span>$ </span><span>115</span>
                             </div>
                         </div>
                         <div class="add__item-counter">
@@ -955,7 +971,7 @@
                                 aria-label="+"
                                 class="add__counter add__counter--plus"
                             ></button>
-                            <span class="add__counter-number">1</span>
+                            <span>1</span>
                             <button
                                 aria-label="-"
                                 class="add__counter add__counter--minus"
@@ -965,12 +981,11 @@
                     <div class="add__info">
                         <p>
                             You have
-                            <span class="add__get-total-items">1</span> item in
-                            the cart
+                            <span>1</span> item in the cart
                         </p>
                         <p>
                             Cart subtotal: $
-                            <span class="add__get-total-price">115</span>
+                            <span>115</span>
                         </p>
                     </div>
                     <div class="add__buttons">
@@ -984,6 +999,6 @@
         </section>
 
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script src="js/script.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>

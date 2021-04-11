@@ -43,11 +43,6 @@
     padding: 10px 0 10px 10px;
     cursor: pointer;
 
-    & svg {
-        display: inline-block;
-        margin-left: 12px;
-    }
-
     &:hover {
         outline: 1px solid $accent;
     }
@@ -56,6 +51,12 @@
         color: $grey;
         transition: 0.2 ease-in;
     }
+}
+
+.subscribe__form svg {
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: 12px;
 }
 
 .subscribe label {

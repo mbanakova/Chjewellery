@@ -7,11 +7,11 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+}
 
-    & h2 {
-        letter-spacing: normal;
-        margin-bottom: 22px;
-    }
+.new__container h2 {
+    letter-spacing: normal;
+    margin-bottom: 22px;
 }
 
 .new__page-link {

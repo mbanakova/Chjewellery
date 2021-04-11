@@ -115,8 +115,7 @@
                                     xlink:href="img/sprite.svg#icon-cart"
                                 ></use>
                             </svg>
-                            <span>Cart&nbsp;</span
-                            ><span class="header__counter">0</span></a
+                            <span>Cart&nbsp;</span><span>0</span></a
                         >
                     </div>
                 </div>
@@ -149,7 +148,7 @@
                                 >
                             </li>
                         </ul>
-                        <ul class="nav__list nav__list--mobile nav">
+                        <ul class="nav__list nav__list--mobile">
                             <li class="nav__item nav__item--mobile">
                                 <a href="#" class="nav__link nav__link--mobile"
                                     >About CH</a
@@ -1064,10 +1063,12 @@
                                 id="user-email"
                                 tabindex="1"
                                 required
+                                placeholder="Your E-mail"
                             />
-                            <label for="user-email" aria-label="Your E-mail"
-                                ><span>Your E-mail</span></label
-                            >
+                            <label
+                                for="user-email"
+                                aria-label="Your E-mail"
+                            ></label>
                         </div>
                         <div class="login__input login__input--password">
                             <input
@@ -1076,10 +1077,12 @@
                                 id="user-password"
                                 tabindex="2"
                                 required
+                                placeholder="Password"
                             />
-                            <label for="user-password" aria-label="password"
-                                ><span>Password</span></label
-                            >
+                            <label
+                                for="user-password"
+                                aria-label="password"
+                            ></label>
                         </div>
                         <a class="login__remind" href="#"
                             >Forgot your password?</a
@@ -1095,6 +1098,6 @@
         </section>
 
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script src="js/script.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>

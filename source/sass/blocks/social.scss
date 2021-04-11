@@ -8,10 +8,6 @@
     text-align: left;
     display: flex;
 
-    & svg {
-        margin-right: 15px;
-    }
-
     &:hover {
         color: $accent;
         transition: 0.2 ease-in;
@@ -21,6 +17,10 @@
         color: $grey;
         transition: 0.2 ease-in;
     }
+}
+
+.social__link svg {
+    margin-right: 15px;
 }
 
 @media (max-width: $desktop) {

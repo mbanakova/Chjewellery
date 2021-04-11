@@ -13,20 +13,20 @@
     margin-top: -3px;
     display: flex;
     flex-direction: column;
+}
 
-    & h2 {
-        text-align: left;
-        line-height: 100%;
-        margin-bottom: 18px;
-        letter-spacing: 0;
-    }
+.jewel__description h2 {
+    text-align: left;
+    line-height: 100%;
+    margin-bottom: 18px;
+    letter-spacing: 0;
+}
 
-    & p {
-        @include font(2.6rem, 100%, 400);
-        @include fields();
-        text-align: left;
-        margin-bottom: 43px;
-    }
+.jewel__description p {
+    @include font(2.6rem, 100%, 400);
+    @include fields();
+    text-align: left;
+    margin-bottom: 43px;
 }
 
 .jewel__table {
@@ -36,43 +36,43 @@
 
 .jewel__info {
     position: relative;
+}
 
-    & label {
-        color: $grey;
-        text-align: left;
-        padding: 20px 0;
-        margin-right: 40px;
-        margin-left: -8px;
-        cursor: pointer;
-    }
+.jewel__info label {
+    color: $grey;
+    text-align: left;
+    padding: 20px 0;
+    margin-right: 40px;
+    margin-left: -8px;
+    cursor: pointer;
+}
 
-    & input {
-        visibility: hidden;
-        margin: 0;
-        padding: 0;
-        width: 0;
-        height: 0;
-    }
+.jewel__info input {
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
 
-    & #tab-1:checked ~ .jewel__label-1,
-    & #tab-2:checked ~ .jewel__label-2 {
+    &:first-of-type:checked ~ .jewel__label-1,
+    &:last-of-type:checked ~ .jewel__label-2 {
         color: $dark;
     }
 
-    & #tab-1:checked ~ .jewel__info-block-1 {
+    &:first-of-type:checked ~ .jewel__info-block-1 {
         display: block;
     }
 
-    & #tab-2:checked ~ .jewel__info-block-2 {
+    &:last-of-type:checked ~ .jewel__info-block-2 {
         display: table;
     }
+}
 
-    & p {
-        @include fields();
-        @include font(1.6rem, 160%, 400);
-        margin-top: 30px;
-        min-height: 147px;
-    }
+.jewel__info p {
+    @include fields();
+    @include font(1.6rem, 160%, 400);
+    margin-top: 30px;
+    min-height: 147px;
 }
 
 .jewel__info-block {
@@ -161,14 +161,14 @@
 
     .jewel__description {
         justify-content: flex-start;
+    }
 
-        & h2 {
-            margin-bottom: 21px;
-        }
+    .jewel__description h2 {
+        margin-bottom: 21px;
+    }
 
-        & p {
-            margin-bottom: 32px;
-        }
+    .jewel__description p {
+        margin-bottom: 32px;
     }
 
     .jewel__features-list {
@@ -178,10 +178,10 @@
 
     .jewel__info {
         position: relative;
+    }
 
-        & label {
-            margin-right: 42px;
-        }
+    .jewel__info label {
+        margin-right: 42px;
     }
 
     .jewel__add-link {

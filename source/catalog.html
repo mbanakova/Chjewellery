@@ -146,7 +146,7 @@
                                 >
                             </li>
                         </ul>
-                        <ul class="nav__list nav__list--mobile nav">
+                        <ul class="nav__list nav__list--mobile">
                             <li class="nav__item nav__item--mobile">
                                 <a href="#" class="nav__link nav__link--mobile"
                                     >About CH</a
@@ -317,16 +317,26 @@
                                                 id="range-left-cell"
                                                 min="0"
                                                 max="200"
-                                                readonly
+                                                value="55"
                                             />
+                                            <label
+                                                for="range-left-cell"
+                                                class="visually-hidden"
+                                                >Min price</label
+                                            >
                                             <span>$&nbsp;</span
                                             ><input
                                                 type="number"
                                                 id="range-right-cell"
                                                 min="0"
                                                 max="200"
-                                                readonly
+                                                value="155"
                                             />
+                                            <label
+                                                for="range-right-cell"
+                                                class="visually-hidden"
+                                                >Max price</label
+                                            >
                                         </div>
                                     </div>
                                 </div>
@@ -336,7 +346,7 @@
                         </form>
                     </div>
                     <ul class="catalog__list">
-                        <li class="new__card card">
+                        <li class="card">
                             <a class="card__link" href="card.html"
                                 ><div class="card__img-wrap">
                                     <picture>
@@ -364,7 +374,7 @@
                                 <p>$ 115</p></a
                             >
                         </li>
-                        <li class="new__card card">
+                        <li class="card">
                             <a class="card__link" href="card.html"
                                 ><div class="card__img-wrap">
                                     <picture>
@@ -392,7 +402,7 @@
                                 <p>$ 55</p></a
                             >
                         </li>
-                        <li class="new__card card">
+                        <li class="card">
                             <a class="card__link" href="card.html"
                                 ><div class="card__img-wrap">
                                     <picture>
@@ -420,7 +430,7 @@
                                 <p>$ 155</p></a
                             >
                         </li>
-                        <li class="new__card card">
+                        <li class="card">
                             <a class="card__link" href="card.html"
                                 ><div class="card__img-wrap">
                                     <picture>
@@ -448,7 +458,7 @@
                                 <p>$ 105</p></a
                             >
                         </li>
-                        <li class="new__card card">
+                        <li class="card">
                             <a class="card__link" href="card.html"
                                 ><div class="card__img-wrap">
                                     <picture>
@@ -476,7 +486,7 @@
                                 <p>$ 75</p></a
                             >
                         </li>
-                        <li class="new__card card">
+                        <li class="card">
                             <a class="card__link" href="card.html"
                                 ><div class="card__img-wrap">
                                     <picture>
@@ -504,7 +514,7 @@
                                 <p>$ 135</p></a
                             >
                         </li>
-                        <li class="new__card card">
+                        <li class="card">
                             <a class="card__link" href="card.html"
                                 ><div class="card__img-wrap">
                                     <picture>
@@ -533,7 +543,7 @@
                             >
                         </li>
 
-                        <li class="new__card card">
+                        <li class="card">
                             <a class="card__link" href="card.html">
                                 <div class="card__img-wrap">
                                     <picture>
@@ -561,7 +571,7 @@
                                 <p>$ 145</p></a
                             >
                         </li>
-                        <li class="new__card card">
+                        <li class="card">
                             <a class="card__link" href="card.html"
                                 ><div class="card__img-wrap">
                                     <picture>
@@ -589,7 +599,7 @@
                                 <p>$ 95</p></a
                             >
                         </li>
-                        <li class="new__card card">
+                        <li class="card">
                             <a class="card__link" href="card.html"
                                 ><div class="card__img-wrap">
                                     <picture>
@@ -618,7 +628,7 @@
                             >
                         </li>
 
-                        <li class="new__card card">
+                        <li class="card">
                             <a class="card__link" href="card.html"
                                 ><div class="card__img-wrap">
                                     <picture>
@@ -646,7 +656,7 @@
                                 <p>$ 105</p></a
                             >
                         </li>
-                        <li class="new__card card">
+                        <li class="card">
                             <a class="card__link" href="card.html"
                                 ><div class="card__img-wrap">
                                     <picture>
@@ -862,10 +872,11 @@
                                 id="user-email"
                                 tabindex="1"
                                 required
+                                placeholder="Your E-mail"
                             />
-                            <label for="user-email" aria-label="Your E-mail"
-                                ><span>Your E-mail</span></label
-                            >
+                            <label for="user-email" aria-label="Your E-mail">
+                                <!-- <span>Your E-mail</span> -->
+                            </label>
                         </div>
                         <div class="login__input login__input--password">
                             <input
@@ -874,10 +885,12 @@
                                 id="user-password"
                                 tabindex="2"
                                 required
+                                placeholder="Password"
                             />
-                            <label for="user-password" aria-label="password"
-                                ><span>Password</span></label
-                            >
+                            <label
+                                for="user-password"
+                                aria-label="password"
+                            ></label>
                         </div>
                         <a class="login__remind" href="#"
                             >Forgot your password?</a
@@ -892,7 +905,6 @@
             </div>
         </section>
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script src="js/range.js"></script>
-        <script src="js/script.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
