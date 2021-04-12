@@ -1,6 +1,8 @@
 "use strict";
 (function () {
     /// swiper
+    // import Swiper from "swiper/bundle";
+    // const Swiper = require("swiper/bundle");
     let swiper = new Swiper(".swiper-container", {
         slidesPerView: 4,
         slidesPerGroup: 4,

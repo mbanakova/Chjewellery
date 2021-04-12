@@ -33,8 +33,15 @@ gulp.task("css", function () {
 
 gulp.task("js", function () {
     return gulp
-        .src("source/js/**/*.js")
+        .src("source/js/main/*.js")
         .pipe(concat("main.js"))
+        .pipe(gulp.dest("build/js"));
+});
+
+gulp.task("vendor", function () {
+    return gulp
+        .src("source/js/vendor/*.js")
+        .pipe(concat("vendor.js"))
         .pipe(gulp.dest("build/js"));
 });
 
@@ -119,6 +126,15 @@ gulp.task("clean", function () {
 
 gulp.task(
     "build",
-    gulp.series("clean", "copy", "css", "js", "sprite", "webp", "html")
+    gulp.series(
+        "clean",
+        "copy",
+        "css",
+        "js",
+        "vendor",
+        "sprite",
+        "webp",
+        "html"
+    )
 );
 gulp.task("start", gulp.series("build", "server"));
