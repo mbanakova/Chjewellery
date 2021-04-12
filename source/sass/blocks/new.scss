@@ -10,6 +10,11 @@
 }
 
 .new__container h2 {
+    @include font(3.4rem, 130%, 700);
+    @include fields();
+    font-family: $cormorant;
+    text-align: center;
+    text-transform: capitalize;
     letter-spacing: normal;
     margin-bottom: 22px;
 }
@@ -38,6 +43,10 @@
 @media (max-width: $desktop) {
     .new {
         margin-bottom: 124px;
+    }
+
+    .new__container h2 {
+        margin-bottom: 20px;
     }
 
     .new__page-link {

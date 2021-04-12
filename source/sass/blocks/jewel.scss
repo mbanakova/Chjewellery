@@ -16,9 +16,14 @@
 }
 
 .jewel__description h2 {
+    @include font(3.4rem, 130%, 700);
+    @include fields();
+    margin-bottom: 25px;
+    font-family: $cormorant;
     text-align: left;
     line-height: 100%;
     margin-bottom: 18px;
+    text-transform: capitalize;
     letter-spacing: 0;
 }
 
@@ -27,11 +32,6 @@
     @include fields();
     text-align: left;
     margin-bottom: 43px;
-}
-
-.jewel__table {
-    border-collapse: collapse;
-    width: 100%;
 }
 
 .jewel__info {
@@ -54,16 +54,16 @@
     width: 0;
     height: 0;
 
-    &:first-of-type:checked ~ .jewel__label-1,
-    &:last-of-type:checked ~ .jewel__label-2 {
+    &:first-of-type:checked ~ label:first-of-type,
+    &:last-of-type:checked ~ label:last-of-type {
         color: $dark;
     }
 
-    &:first-of-type:checked ~ .jewel__info-block-1 {
+    &:first-of-type:checked ~ p {
         display: block;
     }
 
-    &:last-of-type:checked ~ .jewel__info-block-2 {
+    &:last-of-type:checked ~ table {
         display: table;
     }
 }
@@ -71,11 +71,14 @@
 .jewel__info p {
     @include fields();
     @include font(1.6rem, 160%, 400);
-    margin-top: 30px;
     min-height: 147px;
+    display: none;
+    margin-top: 20px;
 }
 
-.jewel__info-block {
+.jewel__table {
+    border-collapse: collapse;
+    width: 100%;
     display: none;
     margin-top: 20px;
 }
@@ -84,11 +87,11 @@
     border-bottom: 1px solid $pale;
 }
 
-.jewel__td {
+.jewel__tr td {
     @include font(1.4rem, 130%, 500);
     padding: 11px 0;
 
-    &--right {
+    &:nth-of-type(even) {
         font-weight: 400;
         text-align: right;
     }
@@ -140,6 +143,10 @@
     .jewel__container {
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 40px;
+    }
+
+    .jewel__description h2 {
+        margin-bottom: 20px;
     }
 
     .jewel__features-list {

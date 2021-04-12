@@ -79,7 +79,6 @@
                         </svg>
                         <input
                             type="text"
-                            class="text"
                             id="search"
                             placeholder="Type here to search"
                         />
@@ -112,8 +111,7 @@
                                     xlink:href="img/sprite.svg#icon-cart"
                                 ></use>
                             </svg>
-                            <span>Cart&nbsp;</span
-                            ><span class="header__counter">0</span></a
+                            <span>Cart&nbsp;</span><span>0</span></a
                         >
                     </div>
                 </div>
@@ -176,9 +174,7 @@
             <h1 class="visually-hidden">Catalog</h1>
             <section class="promo promo--catalog">
                 <div class="promo__container container">
-                    <h2 class="section-title section-title--promo-catalog">
-                        All jewellery
-                    </h2>
+                    <h2>All jewellery</h2>
                     <p>
                         Discover picks of fashion's finest trends in our
                         jewellery catalog
@@ -688,13 +684,11 @@
                     <div class="catalog__controls">
                         <button type="button">Previous</button>
                         <ol class="catalog__pages">
-                            <li class="catalog__page catalog__page--active">
-                                1
-                            </li>
-                            <li class="catalog__page">2</li>
-                            <li class="catalog__page">3</li>
-                            <li class="catalog__page">4</li>
-                            <li class="catalog__page">5</li>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
                         </ol>
                         <button type="button">Next</button>
                     </div>
@@ -711,10 +705,16 @@
                         action="https://echo.htmlacademy.ru"
                         method="POST"
                     >
-                        <input type="email" id="footer-submit" required />
-                        <label for="footer-submit">
-                            <span class="subscribe__label">Your E-mail</span>
-                        </label>
+                        <input
+                            type="email"
+                            id="footer-submit"
+                            required
+                            placeholder="Your E-mail"
+                        />
+                        <label
+                            for="footer-submit"
+                            aria-label="Your E-mail"
+                        ></label>
                         <button type="submit">
                             Sign Up<svg
                                 width="29"
@@ -875,7 +875,6 @@
                                 placeholder="Your E-mail"
                             />
                             <label for="user-email" aria-label="Your E-mail">
-                                <!-- <span>Your E-mail</span> -->
                             </label>
                         </div>
                         <div class="login__input login__input--password">

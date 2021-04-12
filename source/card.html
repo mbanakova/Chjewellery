@@ -79,7 +79,6 @@
                         </svg>
                         <input
                             type="text"
-                            class="text"
                             id="search"
                             placeholder="Type here to search"
                         />
@@ -112,8 +111,7 @@
                                     xlink:href="img/sprite.svg#icon-cart"
                                 ></use>
                             </svg>
-                            <span>Cart&nbsp;</span
-                            ><span class="header__counter">0</span></a
+                            <span>Cart&nbsp;</span><span>0</span></a
                         >
                     </div>
                 </div>
@@ -262,7 +260,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <span class="tabs__count">1 of 4</span>
+                        <span>1 of 4</span>
                         <div class="tabs__content">
                             <picture>
                                 <!-- 1х: 470px; 2x: 940px -->
@@ -287,7 +285,7 @@
                         </div>
                     </div>
                     <div class="jewel__description">
-                        <h2 class="section-title">Gold Necklace</h2>
+                        <h2>Gold Necklace</h2>
                         <p>$ 115</p>
                         <div class="jewel__info">
                             <input type="radio" name="tabs" id="tab-1" />
@@ -307,39 +305,25 @@
                                 for="tab-2"
                                 >Additional info</label
                             >
-                            <p class="jewel__info-block jewel__info-block-1">
+                            <p>
                                 Lorem ipsum dolor sit amet consectetur,
                                 adipisicing elit. Similique non eos optio odit.
                                 A, obcaecati! Quod accusamus non inventore
                                 facilis.
                             </p>
 
-                            <table
-                                class="jewel__info-block jewel__info-block-2 jewel__table"
-                            >
+                            <table class="jewel__table">
                                 <tr class="jewel__tr">
-                                    <td class="jewel__td jewel__td--left">
-                                        Metal type
-                                    </td>
-                                    <td class="jewel__td jewel__td--right">
-                                        Gold 585
-                                    </td>
+                                    <td>Metal type</td>
+                                    <td>Gold 585</td>
                                 </tr>
                                 <tr class="jewel__tr">
-                                    <td class="jewel__td jewel__td--left">
-                                        Stone
-                                    </td>
-                                    <td class="jewel__td jewel__td--right">
-                                        Turquoise
-                                    </td>
+                                    <td>Stone</td>
+                                    <td>Turquoise</td>
                                 </tr>
                                 <tr class="jewel__tr">
-                                    <td class="jewel__td jewel__td--left">
-                                        Size
-                                    </td>
-                                    <td class="jewel__td jewel__td--right">
-                                        18" / 20"
-                                    </td>
+                                    <td>Size</td>
+                                    <td>18" / 20"</td>
                                 </tr>
                             </table>
                         </div>
@@ -347,18 +331,16 @@
                             Add to cart
                         </a>
                         <ul class="jewel__features-list">
-                            <li class="jewel__features-item">14 day returns</li>
-                            <li class="jewel__features-item">
-                                2-year warranty
-                            </li>
-                            <li class="jewel__features-item">free shipping</li>
+                            <li>14 day returns</li>
+                            <li>2-year warranty</li>
+                            <li>free shipping</li>
                         </ul>
                     </div>
                 </div>
             </section>
             <section class="new">
                 <div class="new__container container">
-                    <h2 class="section-title">You may also like</h2>
+                    <h2>You may also like</h2>
                     <a class="new__page-link page-link" href="catalog.html"
                         >Shop now</a
                     >
@@ -739,10 +721,16 @@
                         action="https://echo.htmlacademy.ru"
                         method="POST"
                     >
-                        <input type="email" id="footer-submit" required />
-                        <label for="footer-submit">
-                            <span class="subscribe__label">Your E-mail</span>
-                        </label>
+                        <input
+                            type="email"
+                            id="footer-submit"
+                            required
+                            placeholder="Your E-mail"
+                        />
+                        <label
+                            for="footer-submit"
+                            aria-label="Your E-mail"
+                        ></label>
                         <button type="submit">
                             Sign Up<svg
                                 width="29"
@@ -963,7 +951,7 @@
                         <div class="add__item-text">
                             <h3>Gold Necklace</h3>
                             <div class="add__price__wrap">
-                                <span>$ </span><span>115</span>
+                                <span>$&nbsp;</span><span>115</span>
                             </div>
                         </div>
                         <div class="add__item-counter">

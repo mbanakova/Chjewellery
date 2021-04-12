@@ -67,10 +67,10 @@
     margin-right: 35px;
 }
 
-.catalog__page {
+.catalog__pages li {
     color: $grey;
 
-    &--active {
+    &:first-of-type {
         color: $dark;
     }
 }

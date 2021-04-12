@@ -6,6 +6,16 @@
     max-width: 970px;
 }
 
+.faq__container h2 {
+    @include font(3.4rem, 130%, 700);
+    @include fields();
+    font-family: $cormorant;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: none;
+    margin-bottom: 48px;
+}
+
 .faq__accordion {
     @include ul();
 }
@@ -75,6 +85,10 @@
         margin-bottom: 72px;
     }
 
+    .faq__container h2 {
+        margin-bottom: 47px;
+    }
+
     .faq__item {
         gap: 26px;
         padding-bottom: 16px;
@@ -111,6 +125,10 @@
         margin-bottom: 62px;
     }
 
+    .faq__container h2 {
+        margin-bottom: 28px;
+    }
+
     .faq__item {
         padding: 16px 24px 2px;
         gap: 15px;
@@ -118,31 +136,31 @@
         &:first-of-type {
             padding-bottom: 16px;
         }
+    }
 
-        & h3 {
-            @include font(1.6rem, 22.4px, 500);
-            margin-left: 0;
-            padding-right: 30px;
+    .faq__item h3 {
+        @include font(1.6rem, 22.4px, 500);
+        margin-left: 0;
+        padding-right: 30px;
 
-            &::after {
-                position: absolute;
-                content: "";
-                top: 0;
-                right: 2px;
-                width: 16px;
-                height: 16px;
-                transform: rotate(-45deg);
-            }
-
-            &.active::after {
-                top: 10px;
-            }
+        &::after {
+            position: absolute;
+            content: "";
+            top: 0;
+            right: 2px;
+            width: 16px;
+            height: 16px;
+            transform: rotate(-45deg);
         }
+    }
 
-        & p {
-            @include font(1.4rem, 20px, 400);
-            padding-left: 0;
-            padding-right: 35px;
-        }
+    .faq__item h3.active::after {
+        top: 10px;
+    }
+
+    .faq__item p {
+        @include font(1.4rem, 20px, 400);
+        padding-left: 0;
+        padding-right: 35px;
     }
 }

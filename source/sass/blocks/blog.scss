@@ -8,6 +8,16 @@
     align-items: center;
 }
 
+.blog__container h2 {
+    @include font(3.4rem, 130%, 700);
+    @include fields();
+    margin-bottom: 25px;
+    font-family: $cormorant;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 0.03em;
+}
+
 .blog__page-link {
     margin-bottom: 60px;
 }
@@ -63,7 +73,7 @@
     padding: 68px 40px 75px;
 }
 
-.blog__date {
+.blog__article time {
     @include font(1.4rem, 130%, 500);
     color: $grey;
 }
@@ -83,6 +93,10 @@
 @media (max-width: $desktop) {
     .blog {
         margin-bottom: 70px;
+    }
+
+    .blog__container h2 {
+        margin-bottom: 20px;
     }
 
     .blog__page-link {

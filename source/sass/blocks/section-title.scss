@@ -7,63 +7,45 @@
     text-transform: capitalize;
     letter-spacing: 0.03em;
 
-    &--promo {
-        @include font(4.5rem, 120%, 700);
-        text-transform: uppercase;
-        color: $white;
-        margin-bottom: 0;
-    }
+    // &--promo {
+    //     @include font(4.5rem, 120%, 700);
+    //     text-transform: uppercase;
+    //     color: $white;
+    //     margin-bottom: 0;
+    // }
 
-    &--promo-catalog {
-        @include font(3.4rem, 130%, 700);
-        color: $white;
-        margin-bottom: 0;
-        text-transform: uppercase;
-    }
+    // &--promo-catalog {
+    //     @include font(3.4rem, 130%, 700);
+    //     color: $white;
+    //     margin-bottom: 0;
+    //     text-transform: uppercase;
+    // }
 
-    &--faq {
-        text-transform: none;
-        margin-bottom: 48px;
-    }
+    // &--faq {
+    //     text-transform: none;
+    //     margin-bottom: 48px;
+    // }
 
-    &--gallery {
-        margin-bottom: 30px;
-    }
+    // &--gallery {
+    //     margin-bottom: 30px;
+    // }
 }
 
 @media (max-width: $desktop) {
     .section-title {
         margin-bottom: 20px;
 
-        &--promo {
-            margin-bottom: 0;
-        }
+        // &--promo {
+        //     margin-bottom: 0;
+        // }
 
-        &--promo-catalog {
-            margin-bottom: 0;
-            letter-spacing: normal;
-        }
+        // &--promo-catalog {
+        //     margin-bottom: 0;
+        //     letter-spacing: normal;
+        // }
 
-        &--faq {
-            margin-bottom: 47px;
-        }
-    }
-}
-
-@media (max-width: $tablet) {
-    .section-title {
-        &--promo {
-            @include font(3.8rem, 130%, 700);
-            text-transform: uppercase;
-            color: $white;
-        }
-
-        &--promo-catalog {
-            margin-bottom: 10px;
-        }
-
-        &--faq {
-            margin-bottom: 28px;
-        }
+        // &--faq {
+        //     margin-bottom: 47px;
+        // }
     }
 }

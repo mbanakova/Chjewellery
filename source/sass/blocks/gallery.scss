@@ -8,6 +8,16 @@
     align-items: center;
 }
 
+.gallery__container h2 {
+    @include font(3.4rem, 130%, 700);
+    @include fields();
+    margin-bottom: 30px;
+    font-family: $cormorant;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 0.03em;
+}
+
 .gallery__page-link {
     margin-bottom: 65px;
 }
@@ -57,6 +67,10 @@
 @media (max-width: $desktop) {
     .gallery {
         margin-bottom: 80px;
+    }
+
+    .gallery__container h2 {
+        margin-bottom: 20px;
     }
 
     .gallery__content {

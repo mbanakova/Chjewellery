@@ -32,6 +32,10 @@
     &:valid + label {
         transform: translateY(-200%);
     }
+
+    &::placeholder {
+        color: $grey;
+    }
 }
 
 .subscribe__form button {
@@ -59,14 +63,14 @@
     margin-left: 12px;
 }
 
-.subscribe label {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    transition: all 0.3 ease;
-    color: $grey;
-}
+// .subscribe label {
+//     position: absolute;
+//     top: 50%;
+//     left: 0;
+//     transform: translateY(-50%);
+//     transition: all 0.3 ease;
+//     color: $grey;
+// }
 
 @media (max-width: $desktop) {
     .subscribe h3 {
